@@ -1,5 +1,22 @@
-body {
-  background-color: fuchsia;
-
-}
-
+@use "./blocks/font.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-navigation.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/offer.scss";
+@use "./blocks/button.scss";
+@use "./blocks/programs.scss";
+@use "./blocks/stages.scss";
+@use "./blocks/example.scss";
+@use "./blocks/stats.scss";
+@use "./blocks/address.scss";
+@use "./blocks/survey-container.scss";
+@use "./blocks/form.scss";
+@use "./blocks/data-field.scss";
+@use "./blocks/radio.scss";
+@use "./blocks/contact-field.scss";
+@use "./blocks/checkbox.scss";
+@use "./blocks/catalog-container.scss";
+@use "./blocks/products.scss";
+@use "./blocks/product.scss";
+@use "./blocks/additional.scss";
+@use "./blocks/gift.scss";

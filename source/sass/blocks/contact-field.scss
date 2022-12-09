@@ -1,0 +1,11 @@
+.contact-field {
+  color: #444444;
+}
+
+.contact-field__controle {
+  padding: 14px 52px 14px 15px;
+  &::placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
+}

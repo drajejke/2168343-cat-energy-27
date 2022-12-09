@@ -1,0 +1,11 @@
+.radio {
+  color: #222222;
+  &:not(:last-of-type) {
+    padding-bottom: 13px;
+  }
+}
+
+.radio__controle {
+  margin: 0;
+  margin-right: 15px;
+}
