@@ -1,41 +1,36 @@
 .programs__item {
   text-align: center;
-  background-color: #f2f2f2;
-}
-
-.programs__item:not(:last-of-type) {
+  background-color: $accent-secondary;
+  padding: 30px 20px 22px 20px;
   margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .programs__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $custom-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
+  color: $text-title;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
 }
 
 .programs__text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
   margin: 0;
   margin-bottom: 38px;
 }
 
 .programs__link {
-  padding: 4px 47px 4px 0;
-  margin-bottom: 18px;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+  font-family: $custom-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: $text-title;
 }

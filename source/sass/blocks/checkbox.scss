@@ -1,6 +1,12 @@
-.checkbox:not(:last-of-type) {
-  margin-bottom: 12px;
+.checkbox {
+  color: $text-title;
+  padding-bottom: 13px;
+
+  &:last-child {
+    padding-bottom: 34px;
+  }
 }
+
 .checkbox__control {
   margin: 0;
   margin-right: 16px;

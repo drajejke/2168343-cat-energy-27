@@ -1,11 +1,23 @@
 .contact-field {
-  color: #444444;
+  padding-bottom: 14px;
+
+  &:last-child {
+    padding-bottom: 24px;
+  }
 }
 
-.contact-field__controle {
+.contact-field__label {
+  padding-right: 10px;
+}
+
+.contact-field__control {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
   padding: 14px 52px 14px 15px;
+
   &::placeholder {
-    color: #444444;
     text-transform: uppercase;
   }
 }

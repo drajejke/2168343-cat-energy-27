@@ -1,24 +1,25 @@
 .products {
-  font-family: "Oswald";
-  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 49px;
+  padding-bottom: 25px;
+}
+
+.products .button {
   font-size: 16px;
   line-height: 20px;
 }
 
-.products__list {
+.products__title {
+  font-family: $custom-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.products__item {
-  margin-bottom: 19px;
 }
 
 .products__text {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  margin: 0;
+  padding-bottom: 21px;
 }

@@ -1,28 +1,25 @@
 .example {
-  background-color:#eaeaea;
+  background-color: $block-background;
+  padding: 25px 20px 40px;
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $custom-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin-top: 20px;
+  margin: 0;
   margin-bottom: 40px;
+  color: $text-title;
 }
 
 .example__text {
-  font-family: "Lato", sans-serif ;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
+  margin: 0;
   margin-bottom: 20px;
 }
 
-.example__spanding {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+.example__spending {
+  font-family: $custom-font;
   line-height: 20px;
+  color: $text-title;
 }

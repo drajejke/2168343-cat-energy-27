@@ -1,11 +1,13 @@
 .radio {
-  color: #222222;
-  &:not(:last-of-type) {
-    padding-bottom: 13px;
+  color: $text-alternative;
+  padding-bottom: 13px;
+
+  &:last-child {
+    padding-bottom: 45px;
   }
 }
 
-.radio__controle {
+.radio__control {
   margin: 0;
   margin-right: 15px;
 }

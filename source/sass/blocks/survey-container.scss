@@ -1,9 +1,7 @@
 .survey-container {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $custom-font;
   font-size: 16px;
-  line-height: 18px;
+  padding: 27px 20px 32px;
 }
 
 .survey-container__title {
@@ -11,12 +9,17 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding-top: 27px;
   margin-bottom: 37px;
+  color: $text-title;
 }
 
 .survey-container__description {
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 39px;
+  margin: 0;
+  color: $text-title;
+}
+
+.survey-container__form {
+  padding-top: 39px;
 }

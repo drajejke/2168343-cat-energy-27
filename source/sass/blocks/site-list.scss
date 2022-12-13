@@ -1,18 +1,18 @@
-$-nav-space: 46px;
-
 .site-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   text-transform: uppercase;
   text-align: center;
+  padding: 22px 70px 27px;
 }
 
-.site-list__item:not(:last-child){
-  margin-bottom: $-nav-space;
+.site-list__item {
+  margin-bottom: 46px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .site-list__link {
   text-decoration: none;
-  color: #000000;
+  color: $text-title;
 }

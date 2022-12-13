@@ -6,19 +6,29 @@
   margin: 0;
   padding: 0;
   border: none;
-  padding-bottom: 32px;
+
+  &--textarea {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: inherit;
+    padding-bottom: 22px;
+  }
 }
 
 .form__items-title {
-  color: #000000;
+  color: $text-title;
   font-size: 24px;
   line-height: 26px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
+  padding: 0;
 }
 
 .form__note {
-  font-family: "Lato", sans-serif;
+  font-family: $default-font;
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+  margin: 0;
 }
