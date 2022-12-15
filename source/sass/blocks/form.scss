@@ -13,8 +13,12 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $text-primary;
-    padding-bottom: 22px;
     resize: none;
+    height: 150px;
+
+    &::placeholder {
+      color: $text-primary;
+    }
   }
 }
 
