@@ -8,12 +8,13 @@
   border: none;
 
   &--textarea {
-    font-family: inherit;
+    font-family: $custom-font;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    color: inherit;
+    color: $text-primary;
     padding-bottom: 22px;
+    resize: none;
   }
 }
 
@@ -23,6 +24,10 @@
   line-height: 26px;
   margin-bottom: 35px;
   padding: 0;
+}
+
+.form__item {
+  margin-bottom: 14px;
 }
 
 .form__note {
