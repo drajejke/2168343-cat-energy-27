@@ -1,0 +1,16 @@
+.text-field__label {
+  padding-right: 13px;
+}
+
+.text-field__control {
+  font-family: $custom-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-primary;
+  padding: 14px 20px 13px;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: $text-primary;
+  }
+}

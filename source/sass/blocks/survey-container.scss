@@ -1,0 +1,25 @@
+.survey-container {
+  font-family: $custom-font;
+  font-size: 16px;
+  padding: 27px 20px 32px;
+}
+
+.survey-container__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 37px;
+  color: $text-title;
+}
+
+.survey-container__description {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  color: $text-title;
+}
+
+.survey-container__form {
+  padding-top: 39px;
+}

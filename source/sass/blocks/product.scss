@@ -1,0 +1,24 @@
+.product {
+  padding-top: 11px;
+  padding-bottom: 14px;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__title {
+  font-family: $custom-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text-alternative;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.product__composition {
+  margin: 0;
+  padding-bottom: 22px;
+}

@@ -1,0 +1,26 @@
+.offer {
+  font-family: $custom-font;
+  background-color: rgba($accent-primary, 0.85);
+  text-align: center;
+  color: $text-secondary;
+  padding: 27px 0 20px;
+}
+
+.offer__promo {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.offer__intro {
+  margin: 0 0 29px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.offer__img {
+  display: block;
+  margin: 0 auto 10px;
+}

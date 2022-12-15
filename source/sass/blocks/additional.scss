@@ -1,0 +1,29 @@
+.additional {
+  font-family: $custom-font;
+}
+
+.additional__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-title;
+  margin: 0;
+}
+
+.additional__subject {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-alternative;
+  margin: 0;
+}
+
+.additional__amount {
+  font-family: $default-font;
+  line-height: 14px;
+}
+
+.additional__price {
+  font-family: $default-font;
+  line-height: 14px;
+}

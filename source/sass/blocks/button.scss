@@ -1,0 +1,17 @@
+.button {
+  font-family: $custom-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $accent-primary;
+  padding: 7px 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-secondary;
+  text-decoration: none;
+}
+
+.button--view-all {
+  color: $text-primary;
+  background-color: $accent-secondary;
+}

@@ -1,0 +1,25 @@
+.example {
+  background-color: $block-background;
+  padding: 25px 20px 40px;
+}
+
+.example__title {
+  font-family: $custom-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  color: $text-title;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__spending {
+  font-family: $custom-font;
+  line-height: 20px;
+  color: $text-title;
+}

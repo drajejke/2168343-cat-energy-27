@@ -1,0 +1,14 @@
+.stats {
+  font-family: $custom-font;
+}
+
+.stats__data {
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-title;
+}
+
+.stats__description {
+  font-size: 12px;
+  line-height: 12px;
+}
