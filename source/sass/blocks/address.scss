@@ -1,3 +1,23 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    padding: 56px 70px;
+    height: 199px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    width: 565px;
+    padding: 56px 80px;
+  }
+}
+
 .address__text {
   font-family: $custom-font;
   font-size: 16px;
@@ -5,9 +25,11 @@
   text-transform: uppercase;
   color: $text-contact;
   margin: 0;
+  width: 139px;
 }
 
 .address__number {
   font-style: normal;
   line-height: 20px;
+  width: 139px;
 }

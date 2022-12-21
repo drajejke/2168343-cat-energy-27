@@ -1,0 +1,33 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 0 110px;
+  }
+}
+
+.main-header__logo--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

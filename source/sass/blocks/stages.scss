@@ -1,3 +1,19 @@
+.stages {
+  padding: 20px 20px 49px;
+}
+
+@media (min-width: $tablet-width) {
+  .stages {
+    padding: 45px 30px 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stages {
+    padding: 71px 110px 30px;
+  }
+}
+
 .stages__title {
   font-family: $custom-font;
   font-weight: 400;
@@ -8,6 +24,22 @@
   margin-bottom: 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .stages__list {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    grid-template-rows: 280px 280px;
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .stages__item {
   margin-bottom: 20px;

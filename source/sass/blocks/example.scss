@@ -3,6 +3,18 @@
   padding: 25px 20px 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 43px 30px 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding: 43px 110px 75px;
+  }
+}
+
 .example__title {
   font-family: $custom-font;
   font-weight: 400;
@@ -13,13 +25,49 @@
   color: $text-title;
 }
 
+@media (min-width: $tablet-width) {
+  .example__title {
+    margin-bottom: 63px;
+  }
+}
+
 .example__text {
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__text {
+    margin-bottom: 54px;
+  }
+}
+
+.example__list {
+  margin: 0;
+  display: grid;
+  row-gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__list {
+    width: 366px;
+    display: grid;
+    row-gap: 55px;
+  }
 }
 
 .example__spending {
   font-family: $custom-font;
   line-height: 20px;
   color: $text-title;
+  margin: 0;
+  grid-column: 1/-1;
+  justify-self: center;
 }
