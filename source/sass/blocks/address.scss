@@ -1,18 +1,15 @@
 .address {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
-}
+  padding-top: 26px;
+  padding-bottom: 26px;
 
-@media (min-width: $tablet-width) {
-  .address {
-    padding: 56px 70px;
+  @include above-tablet () {
+    padding: 56px 40px;
     height: 199px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .address {
+  @include above-desktop() {
     width: 565px;
     padding: 56px 80px;
   }

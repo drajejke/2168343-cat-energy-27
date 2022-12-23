@@ -1,5 +1,6 @@
 .gift {
   background-color: rgba($accent-primary, 0.85);
+  // background-image: url(../img/cat-in-bag.png);
 }
 
 .gift__text {
@@ -8,4 +9,5 @@
   line-height: 20px;
   color: $text-secondary;
   margin: 0;
+  text-align: center;
 }

@@ -1,5 +1,8 @@
 .copyright__link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__text {
@@ -9,4 +12,8 @@
   line-height: 19px;
   color: $text-primary;
   margin: 0;
+
+  @include above-tablet {
+    margin-right: 23px;
+  }
 }

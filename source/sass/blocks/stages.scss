@@ -1,19 +1,3 @@
-.stages {
-  padding: 20px 20px 49px;
-}
-
-@media (min-width: $tablet-width) {
-  .stages {
-    padding: 45px 30px 47px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .stages {
-    padding: 71px 110px 30px;
-  }
-}
-
 .stages__title {
   font-family: $custom-font;
   font-weight: 400;
@@ -24,18 +8,15 @@
   margin-bottom: 40px;
 }
 
-@media (min-width: $tablet-width) {
-  .stages__list {
+.stages__list {
+  @include above-tablet() {
     display: grid;
-    grid-template-columns: 247px 249px;
-    grid-template-rows: 280px 280px;
+    grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 137px;
+    column-gap: 60px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .stages__list {
+  @include above-desktop() {
     display: flex;
     justify-content: space-between;
   }

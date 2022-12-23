@@ -3,6 +3,16 @@
   padding-bottom: 14px;
 }
 
+.product__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include above-tablet() {
+    display: block;
+  }
+}
+
+
 .product__link {
   text-decoration: none;
 }

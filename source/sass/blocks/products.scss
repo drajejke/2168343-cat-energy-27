@@ -5,6 +5,33 @@
   padding-bottom: 25px;
 }
 
+.products__list {
+  @include above-tablet() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @include above-desktop() {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 62px;
+  }
+}
+
+.products__item {
+  display: grid;
+
+  @include above-tablet() {
+    display: block;
+    background-color: $accent-secondary;
+
+    &:last-child {
+      background-color: $text-secondary;
+    }
+  }
+}
+
 .products .button {
   font-size: 16px;
   line-height: 20px;

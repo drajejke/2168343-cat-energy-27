@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header__logo" href="#">
       <img class="main-header__logo-image" src="img/header-logo.svg" width="34" height="38" alt="Логотип кота сайта кэт Энерджи">
       <span>
@@ -40,13 +40,15 @@
 
   <main class="main-container">
     <section class="offer">
-      <h1 class="offer__promo">Функциональное<br>питание для котов
-      </h1>
-      <p class="offer__intro">Занялся собой? Займись котом!</p>
-      <img class="offer__img"  src="./img/offer_cat_food.svg" width="280" height="270" alt="Фотография кошачьего питания">
-      <a class="offer__link button" href="form.html">Подобрать программу</a>
+      <div class="offer__wrapper container">
+        <h1 class="offer__promo">Функциональное<br>питание для котов
+        </h1>
+        <p class="offer__intro">Занялся собой? Займись котом!</p>
+        <img class="offer__img"  src="./img/offer_cat_food.svg" width="280" height="270" alt="Фотография кошачьего питания">
+        <a class="offer__link button" href="form.html">Подобрать программу</a>
+    </div>
     </section>
-    <section class="programs">
+    <section class="programs container">
       <h2 class="visually-hidden">Программы для котов</h2>
       <div class="programs__item">
         <h3 class="programs__title">Похудение</h3>
@@ -62,7 +64,7 @@
       </div>
     </section>
     <section class="stages">
-      <div class="stages__wrapper">
+      <div class="stages__wrapper container">
         <h2 class="stages__title">Как это работает</h2>
         <ol class="stages__list list-reset">
           <li class="stages__item stages__item--nutritious">
@@ -81,7 +83,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__wrapper">
+      <div class="example__wrapper container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -111,21 +113,23 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__item address">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="address__text">Приглашаем сотрудничеству дилеров!</p>
-        <address class="address__number">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </div>
-      <div class="contacts__item location">
-        <h2 class="visually-hidden">Карта расположения магазина</h2>
-        <div class="location__map"></div>
+      <div class="contacts__wrapper container">
+        <div class="contacts__item address">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="address__text">Приглашаем сотрудничеству дилеров!</p>
+          <address class="address__number">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="contacts__item location">
+          <h2 class="visually-hidden">Карта расположения магазина</h2>
+          <div class="location__map"></div>
+        </div>
       </div>
     </section>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo" href="#">
-          <img src="img/footer-logo.svg" alt="Логотип сайта Кот Энерджи">
+          <img src="img/footer-logo.svg" alt="Логотип сайта Кот Энерджи" width="128" height="24">
         </a>
 
         <ul class="main-footer__social social list-reset">

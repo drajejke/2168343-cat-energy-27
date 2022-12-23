@@ -4,6 +4,15 @@
   text-align: center;
   color: $text-secondary;
   padding: 27px 0 20px;
+
+  @include above-tablet {
+    background-color: $text-secondary;
+    color: $text-title;
+  }
+
+  @include above-desktop {
+    background-color: rgba($accent-primary, 0.85);
+  }
 }
 
 .offer__promo {

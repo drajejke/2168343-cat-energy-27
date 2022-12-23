@@ -1,17 +1,15 @@
 .example {
   background-color: $block-background;
-  padding: 25px 20px 40px;
-}
+  padding-top: 25px;
+  padding-bottom: 40px;
 
-@media (min-width: $tablet-width) {
-  .example {
-    padding: 43px 30px 100px;
+  @include above-tablet() {
+    padding-top: 43px;
+    padding-bottom: 100px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .example {
-    padding: 43px 110px 75px;
+  @include above-desktop() {
+    padding-bottom: 85px;
   }
 }
 
@@ -23,21 +21,21 @@
   margin: 0;
   margin-bottom: 40px;
   color: $text-title;
-}
 
-@media (min-width: $tablet-width) {
-  .example__title {
+  @include above-tablet() {
     margin-bottom: 63px;
+  }
+
+  @include above-desktop() {
+    margin-bottom: 75px;
   }
 }
 
 .example__text {
   margin: 0;
   margin-bottom: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .example__text {
+  @include above-tablet() {
     margin-bottom: 54px;
   }
 }
@@ -46,17 +44,13 @@
   margin: 0;
   display: grid;
   row-gap: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .example__list {
+  @include above-tablet() {
     display: flex;
     justify-content: space-between;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .example__list {
+  @include above-desktop() {
     width: 366px;
     display: grid;
     row-gap: 55px;
