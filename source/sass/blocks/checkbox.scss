@@ -1,6 +1,16 @@
 .checkbox {
   color: $text-title;
+  padding-bottom: 13px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @include above-tablet() {
+    padding-bottom: 0;
+  }
 }
+
 
 .checkbox__control {
   margin: 0;

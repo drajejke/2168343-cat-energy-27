@@ -1,5 +1,17 @@
-.text-field__label {
-  padding-right: 13px;
+.text-field {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 13px;
+  padding-bottom: 14px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @include above-tablet() {
+    padding-bottom: 20px;
+  }
 }
 
 .text-field__control {

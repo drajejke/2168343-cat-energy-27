@@ -1,3 +1,9 @@
 .contacts--bgcolor {
   background-color: $accent-secondary;
 }
+
+.contacts__wrapper {
+  @include above-desktop {
+    padding: 95px 765px 107px 30px;
+  }
+}

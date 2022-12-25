@@ -1,25 +1,54 @@
-.survey-container {
+// .survey-container {
+//   font-family: $custom-font;
+//   font-size: 16px;
+// }
+
+.survey-container__wrapper {
   font-family: $custom-font;
   font-size: 16px;
-  padding: 27px 20px 32px;
+
+  @include above-tablet() {
+    padding: 0 37px 0 40px;
+  }
+
+  @include above-desktop() {
+    padding: 0;
+  }
 }
 
 .survey-container__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
   margin-bottom: 37px;
   color: $text-title;
+
+  @include above-tablet() {
+    margin-bottom: 55px;
+  }
 }
 
 .survey-container__description {
   font-size: 14px;
   text-transform: uppercase;
-  margin: 0;
   color: $text-title;
+  padding-right: 74px;
+
+  @include above-tablet() {
+    padding-right: 338px;
+  }
+
+  @include above-desktop() {
+    padding-right: 927px;
+  }
 }
 
 .survey-container__form {
   padding-top: 39px;
+  padding-bottom: 32px;
+
+  @include above-tablet() {
+    padding-top: 66px;
+    padding-bottom: 72px;
+  }
 }
