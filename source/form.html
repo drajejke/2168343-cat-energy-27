@@ -45,7 +45,7 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <form class="survey-container__form form container" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__items">
+          <fieldset class="form__items form__items--catinfo">
             <legend class="visually-hidden">Анкета питомца</legend>
             <div class="form__item text-field">
               <label class="text-field__label" for="cat-name">Имя:*</label>
@@ -60,7 +60,7 @@
               <input class="text-field__control" type="number" id="cat-age" name="Возраст (лет):" placeholder="7">
             </div>
           </fieldset>
-          <fieldset class="form__items">
+          <fieldset class="form__items form__items--radio">
             <legend class="visually-hidden">Программы</legend>
             <div class="form__item radio">
               <input class="radio__control" type="radio" id="weight-loss" name="Программа" value="Похудение" checked>
@@ -75,7 +75,7 @@
               <label class="radio__label" for="advice">Не знаю (Нужен ваш совет)</label>
             </div>
           </fieldset>
-          <fieldset class="form__items">
+          <fieldset class="form__items form__items--contact">
             <legend class="form__items-title">Контактные данные (владельца кота)</legend>
             <div class="form__item text-field">
               <label class="text-field__label" for="e-mail">E-mail:*</label>
@@ -86,13 +86,13 @@
               <input class="text-field__control" type="tel" name="Телефон:" id="phone" placeholder="8 (960) 900-60-90" pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required>
             </div>
           </fieldset>
-          <fieldset class="form__items">
+          <fieldset class="form__items form__items--coment">
             <legend class="form__items-title">Комментарий</legend>
             <div class="textarea">
               <textarea class="textarea__field" name="Комментарий" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
-          <fieldset class="form__items">
+          <fieldset class="form__items form__items--checkbox">
             <legend class="form__items-title">Дополнительно</legend>
             <div class="form__item checkbox">
               <input class="checkbox__control" type="checkbox" id="sugar" name="Дополнительно" checked>
@@ -115,7 +115,7 @@
           <p class="form__note">* — Обязательные поля</p>
         </form>
     </div>
-    <section class="contacts contacts--bgcolor">
+    <section class="contacts contacts--bg-gray">
         <div class="contacts__wrapper container">
           <div class="contacts__item address">
             <h2 class="visually-hidden">Контакты</h2>
