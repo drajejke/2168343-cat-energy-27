@@ -5,3 +5,30 @@
   line-height: 20px;
   color: $text-title;
 }
+
+.main-navigation__list {
+  padding: 22px 50px 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 440px;
+
+    a {
+      font-weight: 400;
+    }
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__list {
+    width: 478px;
+  }
+}

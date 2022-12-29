@@ -1,3 +1,18 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @include above-tablet () {
+    padding: 56px 40px;
+  }
+
+  @include above-desktop() {
+    padding: 56px 60px 56px 80px;
+  }
+}
+
 .address__text {
   font-family: $custom-font;
   font-size: 16px;
@@ -5,9 +20,11 @@
   text-transform: uppercase;
   color: $text-contact;
   margin: 0;
+  width: 139px;
 }
 
 .address__number {
   font-style: normal;
   line-height: 20px;
+  width: 139px;
 }

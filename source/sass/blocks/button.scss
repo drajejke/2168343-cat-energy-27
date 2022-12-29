@@ -1,17 +1,21 @@
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: $custom-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   background-color: $accent-primary;
-  padding: 7px 44px;
+  border: none;
+  padding: 7px 25px;
   text-align: center;
   text-transform: uppercase;
   color: $text-secondary;
   text-decoration: none;
 }
 
-.button--view-all {
+.button--secondary {
   color: $text-primary;
   background-color: $accent-secondary;
 }

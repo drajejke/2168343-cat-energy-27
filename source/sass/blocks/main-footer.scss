@@ -1,0 +1,25 @@
+.main-footer {
+  background-color: $accent-secondary;
+}
+
+.main-footer__wrapper {
+  @include above-tablet() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
+}
+
+.main-footer__logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -8,6 +8,19 @@
   margin-bottom: 40px;
 }
 
+.stages__list {
+  @include above-tablet() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 60px;
+  }
+
+  @include above-desktop() {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .stages__item {
   margin-bottom: 20px;

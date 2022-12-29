@@ -1,8 +1,35 @@
 .products {
   font-size: 12px;
   line-height: 16px;
-  padding-top: 49px;
+  padding-top: 41px;
   padding-bottom: 25px;
+}
+
+.products__list {
+  @include above-tablet() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @include above-desktop() {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 62px;
+  }
+}
+
+.products__item {
+  display: grid;
+
+  @include above-tablet() {
+    display: block;
+    background-color: $accent-secondary;
+
+    &:last-child {
+      background-color: $text-secondary;
+    }
+  }
 }
 
 .products .button {
@@ -17,9 +44,13 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 8px;
+  padding-top: 78px;
+  justify-self: center;
 }
 
 .products__text {
   margin: 0;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
+  justify-self: center;
 }

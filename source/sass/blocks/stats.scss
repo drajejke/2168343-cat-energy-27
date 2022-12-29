@@ -2,6 +2,17 @@
   font-family: $custom-font;
 }
 
+.stats__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__wrapper {
+    width: 366px;
+  }
+}
+
 .stats__data {
   font-size: 24px;
   line-height: 24px;

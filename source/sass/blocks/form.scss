@@ -1,5 +1,16 @@
 .form {
   text-transform: uppercase;
+  display: grid;
+
+  @include above-tablet() {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  @include above-desktop() {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .form__items {
@@ -7,18 +18,79 @@
   padding: 0;
   border: none;
 
-  &--textarea {
-    font-family: $custom-font;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $text-primary;
-    resize: none;
-    height: 150px;
+  @include above-tablet() {
+    grid-column: 1/3;
+  }
+}
 
-    &::placeholder {
-      color: $text-primary;
+.form__items--catinfo {
+  margin-bottom: 45px;
+
+  @include above-tablet() {
+    margin-bottom: 72px;
+  }
+}
+
+.form__items--radio {
+  margin-bottom: 45px;
+
+  @include above-tablet() {
+    padding: 25px 28px;
+    margin-bottom: 75px;
+  }
+
+  @include above-desktop() {
+    grid-column: 3/5;
+  }
+}
+
+.form__items--contact {
+  margin-bottom: 23px;
+
+  @include above-tablet() {
+    margin-bottom: 65px;
+  }
+
+  @include above-desktop() {
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 80px;
+
+
+    & .form__item {
+      padding-bottom: 0;
     }
+  }
+}
+
+.form__items--comment {
+  margin-bottom: 22px;
+
+  @include above-tablet() {
+    margin-bottom: 65px;
+  }
+
+  @include above-desktop() {
+    grid-column: 1/5;
+  }
+}
+
+.form__items--checkbox {
+  margin-bottom: 34px;
+
+  @include above-tablet() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 32px;
+    margin-bottom: 54px;
+  }
+
+  @include above-desktop() {
+    grid-column: 1/5;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -28,10 +100,21 @@
   line-height: 26px;
   margin-bottom: 35px;
   padding: 0;
+  text-transform: none;
 }
 
-.form__item {
-  margin-bottom: 14px;
+.form__button {
+  margin-bottom: 21px;
+  padding: 7px 44px;
+
+  @include above-tablet() {
+    margin-bottom: 0;
+    padding: 13px 44px;
+  }
+
+  @include above-desktop() {
+    grid-column: 1/3;
+  }
 }
 
 .form__note {
@@ -40,4 +123,10 @@
   line-height: 16px;
   text-transform: none;
   margin: 0;
+  text-align: center;
+
+  @include above-tablet() {
+    justify-self: start;
+    align-self: center;
+  }
 }

@@ -1,5 +1,10 @@
 .radio {
   color: $text-alternative;
+  padding-bottom: 13px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .radio__control {

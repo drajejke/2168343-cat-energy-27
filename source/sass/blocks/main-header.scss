@@ -1,0 +1,22 @@
+.main-header {
+  @include above-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+  }
+}
+
+.main-header__logo--desktop {
+  display: none;
+}
+
+.main-header__logo {
+  @include above-tablet() {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
