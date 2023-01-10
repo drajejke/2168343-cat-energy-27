@@ -3,7 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  @include above-desktop() {
+    padding-top: 53px;
   }
 }
 
@@ -12,6 +16,11 @@
 }
 
 .main-header__logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 65px;
+
   @include above-tablet() {
     display: none;
 
@@ -19,4 +28,14 @@
       display: block;
     }
   }
+}
+
+.main-header__logo-image {
+  position: absolute;
+}
+
+.main-header__logo span {
+  height: 18px;
+  margin-left: auto;
+  margin-right: auto;
 }
