@@ -1,38 +1,35 @@
 .offer {
-  position: relative;
   font-family: $custom-font;
-  background-color: rgba($accent-primary, 0.85);
   text-align: center;
   color: $text-secondary;
+  background-image:
+    linear-gradient(to bottom, $offer-background 302px, $color-white 302px),
+    url("../img/offer-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, 320px 302px;
+  background-position: top center;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url(../img/offer-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 302px;
-    width: 100%;
-
-    @include above-tablet() {
-      display: none;
-    }
-  }
-
-  @include above-tablet {
-    background-color: $text-secondary;
+  @include above-tablet() {
+    position: relative;
+    background: none;
+    text-align: start;
     color: $text-title;
-    background-image: none;
+    padding-bottom: 526px;
   }
 
-  @include above-desktop {
-    background-color: rgba($accent-primary, 0.85);
+  @include above-desktop() {
+    padding-bottom: 267px;
   }
 }
 
 .offer__wrapper {
-  position: relative;
+  @include above-tablet() {
+    padding-left: 88px;
+  }
+
+  @include above-desktop() {
+    padding-left: 80px;
+  }
 }
 
 .offer__promo {
@@ -46,15 +43,13 @@
   @include above-tablet() {
     font-size: 60px;
     line-height: 60px;
-    text-align: start;
     padding-top: 62px;
-    padding-left: 90px;
-    margin-bottom: 51px;
+    margin-bottom: 41px;
   }
 
   @include above-desktop() {
-    padding-left: 80px;
     margin-bottom: 40px;
+    padding-top: 111px;
   }
 }
 
@@ -66,51 +61,42 @@
   @include above-tablet() {
     font-size: 20px;
     line-height: 20px;
-    text-align: start;
-    padding-left: 90px;
+    margin-bottom: 49px;
   }
 
   @include above-desktop() {
-    padding-left: 80px;
     margin-bottom: 52px;
   }
 }
 
 .offer__img {
-  &--tablet {
-    display: none;
-
-    @include above-tablet() {
-      display: block;
-    }
-
-    @include above-desktop() {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @include above-desktop {
-      display: block;
-    }
-  }
-
   @include above-tablet() {
-    display: none;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 709px;
+    height: 609px;
+  }
+
+  @include above-desktop() {
+    bottom: auto;
+    left: 35%;
+    top: 50px;
+    width: 552px;
+    height: 499px;
   }
 }
 
 .offer__link {
   display: grid;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @include above-tablet() {
-    position: absolute;
-    left: 116px;
-    bottom: 526px;
+    display: inline-flex;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 17px 28px;
   }
 }
