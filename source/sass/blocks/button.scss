@@ -8,7 +8,7 @@
   line-height: 20px;
   background-color: $accent-primary;
   border: none;
-  padding: 7px 25px;
+  padding: 10px 25px;
   text-align: center;
   text-transform: uppercase;
   color: $text-secondary;
@@ -18,4 +18,9 @@
 .button--secondary {
   color: $text-primary;
   background-color: $accent-secondary;
+
+  @include above-tablet() {
+    margin: 0 39px;
+    align-self: stretch;
+  }
 }

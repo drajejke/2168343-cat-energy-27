@@ -1,7 +1,32 @@
 .gift {
-  background-color: rgba($accent-primary, 0.85);
-  min-height: 280px;
-  // background-image: url(../img/cat-in-bag.png);
+  position: relative;
+  min-height: 290px;
+  background-image:
+    linear-gradient(to bottom, $offer-background 290px, $offer-background 290px),
+    url("../img/cat-gift.jpg");
+  background-size: cover, 279px 289px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include above-tablet() {
+    min-height: 200px;
+  }
+}
+
+.gift__icon {
+  display: block;
+  width: 78px;
+  height: 80px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 48px;
+
+  @include above-tablet() {
+    position: absolute;
+    left: 77px;
+    top: 57px;
+  }
 }
 
 .gift__text {
@@ -11,4 +36,12 @@
   color: $text-secondary;
   margin: 0;
   text-align: center;
+
+  @include above-tablet() {
+    text-align: start;
+  }
+
+  @include above-tablet() {
+    text-align: center;
+  }
 }

@@ -3,13 +3,18 @@ $color-green-invisible: rgba(104, 183, 56, 0.85);
 $color-lighten-gray: #f2f2f2;
 $color-lighten-gray-var2: #eaeaea;
 $color-lighten-gray-var3: #e6e6e6;
-$color-lighten-gray-var4: #d9d9d9;
+$color-lighten-gray-var4: #ebebeb;
+$color-lighten-gray-var5: #e7e7e7;
 $color-darken-gray: #cdcdcd;
+$color-darken-gray-var2: #d9d9d9;
+$color-darken-gray-var3: #d3d3d3;
+$color-darken-gray-var4: #bababa;
 $color-dark-gray: #444444;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-lighten-black: #111111;
 $color-lighten-black-var2: #222222;
+$color-red: #ff8282;
 
 
 $accent-primary: $color-green;
@@ -23,6 +28,11 @@ $block-background: $color-lighten-gray-var2;
 $offer-background: $color-green-invisible;
 $border-color: $color-lighten-gray-var3;
 $special-border-color: $color-darken-gray;
+$plus: $color-darken-gray-var3;
+$catalog-line: $color-lighten-gray-var4;
+$input-border: $color-lighten-gray-var5;
+$error: $color-red;
+$radio-border: $color-darken-gray-var4;
 
 $default-font: "Lato", "Arial", sans-serif;
 $custom-font: "Oswald", "Arial", sans-serif;

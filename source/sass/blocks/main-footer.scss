@@ -23,11 +23,11 @@
   content: "";
   position: absolute;
   height: 1px;
-  background-color: $color-lighten-gray-var4;
+  background-color: $color-darken-gray-var2;
   left: 20px;
   right: 20px;
   top: 44px;
-  box-shadow: 0 62px 0 0 $color-lighten-gray-var4;
+  box-shadow: 0 62px 0 0 $color-darken-gray-var2;
 
   @include above-tablet() {
     display: none;

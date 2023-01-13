@@ -28,12 +28,27 @@
       height: 694px;
       top: 0;
       left: 50%;
-      background-image: url(../img/offer-background--desktop.jpg);
+      background-image: url("../img/offer-background--desktop.jpg");
       background-repeat: no-repeat;
       z-index: -1;
     }
   }
 }
+
+.main-header__wrapper--background-off {
+  &::before {
+    @include above-desktop() {
+      content: none;
+    }
+  }
+
+  &::after {
+    @include above-desktop() {
+      content: none;
+    }
+  }
+}
+
 
 .main-header__logo--desktop {
   display: none;

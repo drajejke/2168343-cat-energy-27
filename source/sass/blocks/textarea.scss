@@ -12,8 +12,27 @@
   height: 150px;
   padding: 0;
   margin: 0;
+  padding-top: 9px;
+  text-align: center;
+  border: 1px solid $input-border;
+
+  &:hover {
+    outline: none;
+    border-color: $special-border-color;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $color-dark-gray;
+    border-radius: 0;
+  }
 
   &::placeholder {
     color: $text-primary;
+    padding-left: 19px;
+  }
+
+  @include above-tablet() {
+    text-align: start;
   }
 }

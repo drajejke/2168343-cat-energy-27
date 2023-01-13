@@ -38,13 +38,17 @@
       bottom: -10px;
       left: 0;
       height: 2px;
-      background: $color-green;
+      background-color: $color-green;
 
       @include above-desktop() {
         background-color: $color-white;
       }
     }
   }
+}
+
+.site-list__link--color.site-list__item--current::after {
+  background-color: $color-green;
 }
 
 .site-list__link {
@@ -54,4 +58,8 @@
   @include above-desktop() {
     color: $color-white;
   }
+}
+
+.site-list__link--color {
+  color: $text-title;
 }
