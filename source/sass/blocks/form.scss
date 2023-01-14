@@ -5,6 +5,8 @@
   @include above-tablet() {
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @include above-desktop() {
@@ -35,8 +37,9 @@
   margin-bottom: 45px;
 
   @include above-tablet() {
-    padding: 25px 28px;
+    padding: 30px 0;
     margin-bottom: 75px;
+    border: 1px solid $color-lighten-gray-var5;
   }
 
   @include above-desktop() {
@@ -45,7 +48,26 @@
 }
 
 .form__items--contact {
+  position: relative;
   margin-bottom: 23px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -20px;
+    top: -71px;
+    height: 2px;
+    background-color: $color-green;
+    z-index: -1;
+
+    @include above-tablet() {
+      top: -90px;
+      left: -100px;
+      right: -100px;
+    }
+  }
+
 
   @include above-tablet() {
     margin-bottom: 65px;
@@ -64,8 +86,40 @@
   }
 }
 
+
+.form__items--contact .form__items-title {
+  width: 196px;
+  padding-right: 14px;
+  background-color: $color-white;
+
+  @include above-tablet() {
+    width: auto;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 46px;
+  }
+}
+
 .form__items--comment {
+  position: relative;
   margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -20px;
+    top: -47px;
+    height: 2px;
+    background-color: $color-green;
+    z-index: -1;
+
+    @include above-tablet() {
+      top: -90px;
+      left: -100px;
+      right: -100px;
+    }
+  }
 
   @include above-tablet() {
     margin-bottom: 65px;
@@ -76,8 +130,37 @@
   }
 }
 
+.form__items--comment .form__items-title {
+  background-color: $color-white;
+  padding-right: 22px;
+
+  @include above-tablet() {
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 38px;
+  }
+}
+
 .form__items--checkbox {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -20px;
+    top: -46px;
+    height: 2px;
+    background-color: $color-green;
+    z-index: -1;
+
+    @include above-tablet() {
+      top: -90px;
+      left: -100px;
+      right: -100px;
+    }
+  }
 
   @include above-tablet() {
     display: grid;
@@ -94,6 +177,17 @@
   }
 }
 
+.form__items--checkbox .form__items-title {
+  padding-right: 23px;
+  background-color: $color-white;
+
+  @include above-tablet() {
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 41px;
+  }
+}
+
 .form__items-title {
   color: $text-title;
   font-size: 24px;
@@ -101,15 +195,21 @@
   margin-bottom: 35px;
   padding: 0;
   text-transform: none;
+
+  @include above-tablet() {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form__button {
   margin-bottom: 21px;
-  padding: 7px 44px;
+  padding: 10px 44px;
 
   @include above-tablet() {
     margin-bottom: 0;
-    padding: 13px 44px;
+    padding: 16px 44px;
   }
 
   @include above-desktop() {
@@ -126,6 +226,7 @@
   text-align: center;
 
   @include above-tablet() {
+    font-size: 16px;
     justify-self: start;
     align-self: center;
   }

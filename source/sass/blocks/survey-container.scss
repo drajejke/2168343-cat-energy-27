@@ -1,11 +1,22 @@
-// .survey-container {
-//   font-family: $custom-font;
-//   font-size: 16px;
-// }
-
 .survey-container__wrapper {
+  position: relative;
   font-family: $custom-font;
   font-size: 16px;
+  padding-top: 27px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $color-darken-gray-var2;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    @include above-tablet() {
+      content: none;
+    }
+  }
 
   @include above-tablet() {
     padding: 0 37px 0 40px;
@@ -24,7 +35,10 @@
   color: $text-title;
 
   @include above-tablet() {
-    margin-bottom: 55px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 56px;
+    padding-top: 75px;
   }
 }
 
@@ -35,7 +49,9 @@
   padding-right: 74px;
 
   @include above-tablet() {
-    padding-right: 338px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 275px;
   }
 
   @include above-desktop() {

@@ -20,6 +20,18 @@
   line-height: 18px;
   color: $text-primary;
   padding: 14px 20px 13px;
+  border: 1px solid $input-border;
+
+  &:hover {
+    outline: none;
+    border-color: $special-border-color;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $color-dark-gray;
+    border-radius: 0;
+  }
 
   &::placeholder {
     text-transform: uppercase;
