@@ -42,6 +42,7 @@
 
 .stages__list {
   padding-left: 80px;
+  counter-reset: stages;
 
   @include above-tablet() {
     display: grid;
@@ -52,17 +53,55 @@
   }
 
   @include above-desktop() {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
 .stages__item {
   position: relative;
   margin-bottom: 20px;
+  counter-increment: stages;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+
+    @include above-tablet() {
+      left: auto;
+      top: 40px;
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+    }
+  }
+
+  &::after {
+    @include above-tablet() {
+      content: counter(stages);
+      position: absolute;
+      top: 0;
+      left: 119px;
+      z-index: -1;
+      font-family: $custom-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $color-lighten-gray;
+    }
+
+    @include above-desktop() {
+      left: auto;
+      right: 0;
+    }
   }
 
   @include above-tablet() {
@@ -79,140 +118,24 @@
 
 .stages__item--nutritious {
   &::before {
-    content: "";
-    position: absolute;
-    left: -80px;
-    top: 0;
-    width: 60px;
-    height: 60px;
     background-image: url("../img/nutritious.svg");
-    background-repeat: no-repeat;
-
-    @include above-tablet() {
-      left: auto;
-      top: 40px;
-      width: 80px;
-      height: 80px;
-      background-size: 80px 80px;
-    }
-  }
-
-  &::after {
-    @include above-tablet() {
-      content: "1";
-      position: absolute;
-      top: 0;
-      left: 119px;
-      z-index: -1;
-      font-family: $custom-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $color-lighten-gray;
-    }
   }
 }
 
 .stages__item--release {
   &::before {
-    content: "";
-    position: absolute;
-    left: -80px;
-    top: 0;
-    width: 60px;
-    height: 60px;
     background-image: url("../img/release.svg");
-    background-repeat: no-repeat;
-
-    @include above-tablet() {
-      left: auto;
-      top: 40px;
-      width: 80px;
-      height: 80px;
-      background-size: 80px 80px;
-    }
-  }
-
-  &::after {
-    @include above-tablet() {
-      content: "2";
-      position: absolute;
-      top: 0;
-      left: 119px;
-      z-index: -1;
-      font-family: $custom-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $color-lighten-gray;
-    }
   }
 }
 
 .stages__item--knife {
   &::before {
-    content: "";
-    position: absolute;
-    left: -80px;
-    top: 0;
-    width: 60px;
-    height: 60px;
     background-image: url("../img/knife.svg");
-    background-repeat: no-repeat;
-
-    @include above-tablet() {
-      left: auto;
-      top: 40px;
-      width: 80px;
-      height: 80px;
-      background-size: 80px 80px;
-    }
-  }
-
-  &::after {
-    @include above-tablet() {
-      content: "3";
-      position: absolute;
-      top: 0;
-      left: 119px;
-      z-index: -1;
-      font-family: $custom-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $color-lighten-gray;
-    }
   }
 }
 
 .stages__item--watch {
   &::before {
-    content: "";
-    position: absolute;
-    left: -80px;
-    top: 0;
-    width: 60px;
-    height: 60px;
     background-image: url("../img/watch.svg");
-    background-repeat: no-repeat;
-
-    @include above-tablet() {
-      left: auto;
-      top: 40px;
-      width: 80px;
-      height: 80px;
-      background-size: 80px 80px;
-    }
-  }
-
-  &::after {
-    @include above-tablet() {
-      content: "4";
-      position: absolute;
-      top: 0;
-      left: 119px;
-      z-index: -1;
-      font-family: $custom-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $color-lighten-gray;
-    }
   }
 }

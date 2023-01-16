@@ -20,11 +20,15 @@
   position: absolute;
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   border: 1px solid $special-border-color;
   background-color: $color-white;
   left: 0;
   top: -5px;
+
 
   @include above-tablet() {
     width: 40px;
@@ -33,11 +37,9 @@
   }
 }
 
-.radio__control[type="radio"]:checked ~ .radio__control--mark::before {
+.radio__control[type="radio"]:checked + .radio__control--mark::before {
   content: "";
   position: absolute;
-  left: 8px;
-  top: 8px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -51,13 +53,11 @@
   }
 }
 
-.radio__label:hover + .radio__control--mark,
-.radio__control--mark:hover {
+.radio__label:hover .radio__control--mark,
+.radio__label:hover .radio__control {
   border-color: $radio-border;
 }
 
-.radio__control:disabled ~ .radio__control--mark,
-.radio__control:disabled ~ .radio__control--mark::before,
-.radio__control:disabled ~ .radio__label {
+.radio__control:disabled + .radio__control--mark {
   opacity: 0.3;
 }

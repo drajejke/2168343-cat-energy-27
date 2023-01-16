@@ -8,8 +8,20 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @include retina() {
+    background-image:
+      linear-gradient(to bottom, $offer-background 290px, $offer-background 290px),
+      url("../img/cat-gift@2x.jpg");
+  }
+
   @include above-tablet() {
     min-height: 200px;
+    background-size: cover;
+    background-position: center, center -337px;
+  }
+
+  @include above-tablet() {
+    background-position: center;
   }
 }
 

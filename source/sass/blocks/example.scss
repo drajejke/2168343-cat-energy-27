@@ -17,6 +17,10 @@
   }
 }
 
+.example__wrapper {
+  position: relative;
+}
+
 .example__title {
   font-family: $custom-font;
   font-weight: 400;
@@ -62,6 +66,7 @@
   @include above-tablet() {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 91px;
   }
 
   @include above-desktop() {
@@ -92,4 +97,9 @@
     justify-items: center;
     gap: 36px;
   }
+}
+
+.example__slider {
+  margin-left: auto;
+  margin-right: auto;
 }
