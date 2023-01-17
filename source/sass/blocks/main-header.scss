@@ -15,17 +15,6 @@
   @include above-desktop() {
     padding-top: 53px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 50%;
-      width: 50%;
-      height: 694px;
-      background-color: $offer-background;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -33,14 +22,15 @@
       height: 694px;
       top: 0;
       left: 50%;
-      background-image: url("../img/offer-background--desktop.jpg");
+      background-image: url("../img/offer-cat-desktop.jpg");
       background-repeat: no-repeat;
       background-position: right;
       z-index: -1;
+      background-color: $offer-background;
 
       @include retina {
-        background-image: url("../img/offer-background--desktop@2x.jpg");
-        background-size: 100% 694px;
+        background-image: url("../img/offer-cat-desktop@2x.jpg");
+        background-size: 112% 694px;
       }
     }
   }
@@ -52,12 +42,6 @@
       content: none;
     }
   }
-
-  &::after {
-    @include above-desktop() {
-      content: none;
-    }
-  }
 }
 
 .main-header__logo {
@@ -65,6 +49,18 @@
   display: flex;
   align-items: center;
   height: 65px;
+}
+
+.main-header__logo img {
+  @include above-tablet() {
+    width: 174px;
+    height: 52px;
+  }
+
+  @include above-desktop() {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .main-header__logo picture {

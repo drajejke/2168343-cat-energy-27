@@ -85,7 +85,7 @@
 
   @include above-desktop() {
     bottom: auto;
-    left: 38%;
+    left: calc(50% - 160px);
     top: 32px;
   }
 }
