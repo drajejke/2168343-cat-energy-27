@@ -20,7 +20,7 @@
   background-color: $accent-secondary;
 
   @include above-tablet() {
-    margin: 0 39px;
+    margin: 0 35px;
     align-self: stretch;
   }
 }

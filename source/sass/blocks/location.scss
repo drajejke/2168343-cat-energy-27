@@ -5,7 +5,24 @@
   background-position: center;
   background-size: cover;
 
+  @include retina() {
+    background-image: url("../img/map@2x.jpg");
+  }
+
   @include above-tablet() {
+    background-image: url("../img/map-tablet.jpg");
     height: 400px;
+
+    @include retina() {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @include above-desktop() {
+    background-image: url("../img/map-desktop.jpg");
+
+    @include retina() {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

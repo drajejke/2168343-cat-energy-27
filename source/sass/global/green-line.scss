@@ -1,0 +1,11 @@
+@mixin green-line {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100vw;
+    right: -100vw;
+    height: 2px;
+    background-color: $color-green;
+    @content;
+  }
+}

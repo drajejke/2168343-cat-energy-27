@@ -4,24 +4,11 @@
   padding-top: 25px;
   padding-bottom: 35px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 20px;
-    right: 0;
-    top: 41px;
-    height: 2px;
-    background-color: $color-green;
+  @include green-line() {
+    top: 39px;
 
     @include above-tablet() {
-      left: 0;
-      right: 0;
       top: 48px;
-    }
-
-    @include above-desktop() {
-      left: -110px;
-      right: -110px;
     }
   }
 

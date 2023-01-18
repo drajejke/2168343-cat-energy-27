@@ -51,23 +51,16 @@
   position: relative;
   margin-bottom: 23px;
 
-  &::before {
-    content: "";
-    position: absolute;
+  @include green-line() {
     left: 0;
-    right: -20px;
     top: -71px;
-    height: 2px;
-    background-color: $color-green;
     z-index: -1;
 
     @include above-tablet() {
+      left: -100vw;
       top: -90px;
-      left: -100px;
-      right: -100px;
     }
   }
-
 
   @include above-tablet() {
     margin-bottom: 65px;
@@ -103,21 +96,16 @@
 .form__items--comment {
   position: relative;
   margin-bottom: 22px;
+  display: block;
 
-  &::before {
-    content: "";
-    position: absolute;
+  @include green-line() {
     left: 0;
-    right: -20px;
-    top: -47px;
-    height: 2px;
-    background-color: $color-green;
+    top: -46px;
     z-index: -1;
 
     @include above-tablet() {
       top: -90px;
-      left: -100px;
-      right: -100px;
+      left: -100vw;
     }
   }
 
@@ -145,20 +133,14 @@
   margin-bottom: 40px;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
+  @include green-line() {
     left: 0;
-    right: -20px;
     top: -46px;
-    height: 2px;
-    background-color: $color-green;
     z-index: -1;
 
     @include above-tablet() {
       top: -90px;
-      left: -100px;
-      right: -100px;
+      left: -100vw;
     }
   }
 
@@ -208,8 +190,10 @@
   padding: 10px 44px;
 
   @include above-tablet() {
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 0;
-    padding: 16px 44px;
+    padding: 11px 44px;
   }
 
   @include above-desktop() {

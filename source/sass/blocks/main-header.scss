@@ -1,3 +1,9 @@
+.main-header {
+  @include above-desktop() {
+    position: relative;
+  }
+}
+
 .main-header__wrapper {
   @include above-tablet {
     display: flex;
@@ -7,19 +13,7 @@
   }
 
   @include above-desktop() {
-    position: relative;
     padding-top: 53px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 50%;
-      width: 50%;
-      height: 694px;
-      background-color: $offer-background;
-    }
 
     &::before {
       content: "";
@@ -28,9 +22,16 @@
       height: 694px;
       top: 0;
       left: 50%;
-      background-image: url("../img/offer-background--desktop.jpg");
+      background-image: url("../img/offer-cat-desktop.jpg");
       background-repeat: no-repeat;
+      background-position: right;
       z-index: -1;
+      background-color: $offer-background;
+
+      @include retina {
+        background-image: url("../img/offer-cat-desktop@2x.jpg");
+        background-size: 112% 694px;
+      }
     }
   }
 }
@@ -41,17 +42,6 @@
       content: none;
     }
   }
-
-  &::after {
-    @include above-desktop() {
-      content: none;
-    }
-  }
-}
-
-
-.main-header__logo--desktop {
-  display: none;
 }
 
 .main-header__logo {
@@ -59,17 +49,21 @@
   display: flex;
   align-items: center;
   height: 65px;
+}
 
+.main-header__logo img {
   @include above-tablet() {
-    display: none;
+    width: 174px;
+    height: 52px;
+  }
 
-    &--desktop {
-      display: block;
-    }
+  @include above-desktop() {
+    width: 202px;
+    height: 59px;
   }
 }
 
-.main-header__logo-image {
+.main-header__logo picture {
   position: absolute;
 }
 
@@ -77,4 +71,9 @@
   height: 18px;
   margin-left: auto;
   margin-right: auto;
+
+  @include above-tablet() {
+    display: none;
+  }
 }
+

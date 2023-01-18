@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  column-gap: 13px;
   padding-bottom: 14px;
 
   &:last-child {
@@ -14,6 +13,14 @@
   }
 }
 
+.text-field__label {
+  margin-right: 13px;
+
+  @include above-tablet() {
+    margin-right: 20px;
+  }
+}
+
 .text-field__control {
   font-family: $custom-font;
   font-size: 16px;
@@ -21,20 +28,37 @@
   color: $text-primary;
   padding: 14px 20px 13px;
   border: 1px solid $input-border;
+  text-transform: uppercase;
+  border-radius: 0;
+  outline: none;
+
+  @include above-tablet () {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px 20px;
+  }
 
   &:hover {
-    outline: none;
     border-color: $special-border-color;
   }
 
   &:focus {
-    outline: none;
-    border: 2px solid $color-dark-gray;
-    border-radius: 0;
+    border: 1px solid $color-dark-gray;
+    box-shadow: 0 0 0 1px $color-dark-gray;
   }
 
   &::placeholder {
-    text-transform: uppercase;
     color: $text-primary;
+    opacity: 1;
+  }
+
+  &--textarea {
+    resize: vertical;
+    height: 150px;
+    padding: 9px 13px;
+
+    @include above-tablet() {
+      padding: 11px 20px;
+    }
   }
 }
