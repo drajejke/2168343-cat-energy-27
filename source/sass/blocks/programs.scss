@@ -144,7 +144,23 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $text-title;
-  padding-right: 50px;
+  padding-right: 80px;
+
+  &:hover {
+    &::after {
+      background-image: url("../img/pointer-right-hover.svg");
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      background-image: url("../img/pointer-right-hover.svg");
+      width: 32px;
+    }
+  }
 
   &::after {
     content: "";
@@ -152,6 +168,7 @@
     bottom: 6px;
     left: 101px;
     background-image: url("../img/pointer-right.svg");
+    background-repeat: no-repeat;
     width: 24px;
     height: 12px;
 
@@ -165,4 +182,8 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.programs__link:hover > .programs__link::after {
+  background-image: url("../img/pointer-right-hover.svg");
 }
