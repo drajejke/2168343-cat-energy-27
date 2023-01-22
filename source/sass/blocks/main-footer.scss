@@ -34,13 +34,15 @@
   }
 }
 
-.main-footer__logo img {
+.main-footer__logo svg {
   display: block;
   margin: 0 auto;
   margin-bottom: 40px;
 
   @include above-tablet() {
     margin-bottom: 0;
+    width: 143px;
+    height: 26px;
   }
 }
 
@@ -53,5 +55,14 @@
   @include above-tablet() {
     margin-bottom: 0;
   }
+}
+
+.main-footer__logo:hover path,
+.main-footer__logo:focus path {
+  fill: $logo-hover;
+}
+
+.main-footer__logo:active path {
+  fill: $logo-active;
 }
 

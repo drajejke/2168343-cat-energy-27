@@ -1,3 +1,32 @@
+.location {
+  position: relative;
+
+  ::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/map-pin.svg");
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 53px;
+    top: 139px;
+    left: calc(50% - 27px);
+
+    @include above-tablet() {
+      width: 113px;
+      height: 106px;
+      background-size: 100%;
+      top: 146px;
+      left: calc(50% - 51px);
+    }
+
+    @include above-desktop () {
+      top: 131px;
+      left: calc(50% + 190px);
+    }
+  }
+}
+
+
 .location__map {
   background-image: url("../img/map.jpg");
   height: 362px;

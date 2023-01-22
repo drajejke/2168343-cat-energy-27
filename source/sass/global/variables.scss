@@ -1,5 +1,6 @@
 $color-green: #68b738;
 $color-green-var2: #64a73c;
+$color-green-var3:#5eaa2f;
 $color-green-invisible: rgba(104, 183, 56, 0.85);
 $color-lighten-gray: #f2f2f2;
 $color-lighten-gray-var2: #eaeaea;
@@ -11,6 +12,8 @@ $color-darken-gray-var2: #d9d9d9;
 $color-darken-gray-var3: #d3d3d3;
 $color-darken-gray-var4: #bababa;
 $color-dark-gray: #444444;
+$color-dark-gray-var2: #3e3e3e;
+$color-dark-gray-var3:#6b6b6b;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-lighten-black: #111111;
@@ -36,6 +39,9 @@ $input-border: $color-lighten-gray-var5;
 $error: $color-red;
 $radio-border: $color-darken-gray-var4;
 $offer-background: $color-green-var2;
+$button-hover-bg: $color-green-var3;
+$logo-hover: $color-dark-gray-var2;
+$logo-active: $color-dark-gray-var3;
 
 $default-font: "Lato", "Arial", sans-serif;
 $custom-font: "Oswald", "Arial", sans-serif;

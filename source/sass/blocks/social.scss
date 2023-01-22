@@ -4,4 +4,14 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $color-green;
+  }
+
+  &:active svg {
+    fill: $color-green;
+    opacity: 0.3;
+  }
 }

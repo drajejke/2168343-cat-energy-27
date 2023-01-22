@@ -13,11 +13,27 @@
   text-transform: uppercase;
   color: $text-secondary;
   text-decoration: none;
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
 }
 
 .button--secondary {
   color: $text-primary;
   background-color: $accent-secondary;
+
+  &:hover {
+    background-color: $catalog-line;
+  }
+
+  &:active {
+    color: rgba($text-primary, 0.3);
+  }
 
   @include above-tablet() {
     margin: 0 35px;

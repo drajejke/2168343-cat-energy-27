@@ -1,4 +1,5 @@
 .text-field {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -18,6 +19,17 @@
 
   @include above-tablet() {
     margin-right: 20px;
+  }
+}
+
+.text-field__svg {
+  position: absolute;
+  right: 16.5px;
+  top: 16px;
+
+  @include above-tablet() {
+    right: 19px;
+    top: 19px;
   }
 }
 
@@ -45,6 +57,10 @@
   &:focus {
     border: 1px solid $color-dark-gray;
     box-shadow: 0 0 0 1px $color-dark-gray;
+
+    & + .text-field__svg path {
+      stroke: $color-green;
+    }
   }
 
   &::placeholder {

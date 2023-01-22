@@ -5,6 +5,20 @@
   align-items: center;
 }
 
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: $color-green;
+}
+
+.copyright__link:active svg {
+  fill: $color-green;
+  opacity: 0.3;
+}
+
+.copyright__link:active p {
+  opacity: 0.3;
+}
+
 .copyright__text {
   font-style: normal;
   font-weight: 400;
