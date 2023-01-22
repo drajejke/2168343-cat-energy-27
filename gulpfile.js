@@ -9,7 +9,8 @@ import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgstore';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 import del from 'del';
 
 // Styles
@@ -68,8 +69,8 @@ const createWebp  = () => {
 
 //SVG
 
-const svg = () => {
-  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+export const svg = () => {
+ return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'))
 }
@@ -151,7 +152,7 @@ export const build = gulp.series(
 
 // Default
 
-export default gulp.series(
+export const start = gulp.series(
   clean,
   copy,
   copyImages,
@@ -161,7 +162,6 @@ export default gulp.series(
   scripts,
   svg,
   sprite,
-  createWebp
   ),
   gulp.series(
   server,
