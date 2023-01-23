@@ -29,7 +29,7 @@
     padding: 16px 21px;
 
     @include above-tablet() {
-      padding: 15px 30px 20px;
+      padding: 15px 28px 20px;
     }
   }
 
@@ -42,7 +42,7 @@
 
     @include above-tablet() {
       width: 114px;
-      top: 47px;
+      top: 49px;
       left: 24px;
       padding: 16px 9px;
     }
@@ -57,8 +57,8 @@
 
     @include above-tablet() {
       width: 142px;
-      top: 58px;
-      left: 10px;
+      top: 60px;
+      left: 12px;
       padding: 5px 8px;
     }
   }

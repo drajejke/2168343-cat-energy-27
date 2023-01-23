@@ -52,8 +52,4 @@
   @include above-tablet() {
     text-align: start;
   }
-
-  @include above-tablet() {
-    text-align: center;
-  }
 }

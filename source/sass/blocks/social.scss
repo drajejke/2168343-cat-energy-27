@@ -1,17 +1,21 @@
 .social__item {
-  margin-right: 30px;
+  margin-right: 28px;
 
   &:last-child {
     margin-right: 0;
   }
+}
 
-  &:hover svg,
-  &:focus svg {
-    fill: $color-green;
+.social__link {
+  color: $color-slider;
+
+  &:hover,
+  &:focus {
+   color: $color-green;
   }
 
-  &:active svg {
-    fill: $color-green;
+  &:active {
+    color: $color-green;
     opacity: 0.3;
   }
 }

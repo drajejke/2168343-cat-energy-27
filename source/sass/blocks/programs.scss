@@ -1,6 +1,6 @@
 .programs {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 
   @include above-tablet {
     padding-top: 0;
@@ -64,7 +64,7 @@
     content: "";
     position: absolute;
     left: 22px;
-    top: 21px;
+    top: 23px;
     width: 50px;
     height: 53px;
     background-image: url("../img/cat_black-slim.svg");
@@ -120,8 +120,23 @@
 }
 
 .programs__text {
+  position: relative;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    bottom: -23px;
+    left: 0;
+
+    @include above-tablet() {
+      content: none;
+    }
+  }
 
   @include above-tablet() {
     font-size: 16px;
@@ -165,8 +180,8 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 6px;
-    left: 101px;
+    bottom: 8px;
+    left: 98px;
     background-image: url("../img/pointer-right.svg");
     background-repeat: no-repeat;
     width: 24px;
@@ -174,7 +189,7 @@
 
     @include above-tablet() {
       bottom: 8px;
-      left: 129px;
+      left: 133px;
     }
   }
 

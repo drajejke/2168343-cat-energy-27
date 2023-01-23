@@ -6,14 +6,21 @@
 
   @include green-line() {
     top: 39px;
+    left: 20px;
 
     @include above-tablet() {
-      top: 48px;
+      top: 66px;
+      left: -100vw;
+    }
+
+    @include above-desktop () {
+      top: 23px;
     }
   }
 
   @include above-tablet() {
     padding-bottom: 76px;
+    padding-top: 45px;
   }
 
   @include above-desktop() {
@@ -21,6 +28,7 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
     padding-bottom: 86px;
+    padding-top: 0;
   }
 }
 
@@ -65,7 +73,7 @@
 
 .additional__item {
   display: grid;
-  padding-top: 13px;
+  padding-top: 10px;
   padding-bottom: 19px;
   grid-template-columns: 1fr 1fr;
   row-gap: 15px;
@@ -84,7 +92,7 @@
     margin-bottom: 0;
     padding: 26px 38px 28px;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 22px;
+    row-gap: 21px;
     align-items: baseline;
   }
 

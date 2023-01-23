@@ -38,7 +38,11 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 56px;
-    padding-top: 75px;
+    padding-top: 55px;
+  }
+
+  @include above-desktop() {
+    padding-top: 70px;
   }
 }
 
@@ -64,7 +68,11 @@
   padding-bottom: 32px;
 
   @include above-tablet() {
-    padding-top: 66px;
+    padding-top: 64px;
     padding-bottom: 72px;
+  }
+
+  @include above-desktop() {
+    padding-bottom: 80px;
   }
 }

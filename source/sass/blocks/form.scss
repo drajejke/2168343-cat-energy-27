@@ -26,15 +26,19 @@
 }
 
 .form__items--catinfo {
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 
   @include above-tablet() {
     margin-bottom: 72px;
   }
+
+  @include above-desktop() {
+    margin-bottom: 70px;
+  }
 }
 
 .form__items--radio {
-  margin-bottom: 45px;
+  margin-bottom: 52px;
 
   @include above-tablet() {
     padding: 30px 0;
@@ -44,6 +48,7 @@
 
   @include above-desktop() {
     grid-column: 3/5;
+    margin-bottom: 70px;
   }
 }
 
@@ -72,7 +77,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 25px 80px;
 
-
     & .form__item {
       padding-bottom: 0;
     }
@@ -87,15 +91,19 @@
 
   @include above-tablet() {
     width: auto;
-    margin-left: -20px;
-    padding-left: 20px;
-    padding-right: 46px;
+    margin-left: -40px;
+    padding-left: 38px;
+    padding-right: 42px;
   }
+}
+
+.form__items--contact .form__item label {
+  margin-right: 20px;
 }
 
 .form__items--comment {
   position: relative;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   display: block;
 
   @include green-line() {
@@ -104,7 +112,7 @@
     z-index: -1;
 
     @include above-tablet() {
-      top: -90px;
+      top: -92px;
       left: -100vw;
     }
   }
@@ -123,9 +131,9 @@
   padding-right: 22px;
 
   @include above-tablet() {
-    margin-left: -20px;
-    padding-left: 20px;
-    padding-right: 38px;
+    margin-left: -40px;
+    padding-left: 38px;
+    padding-right: 40px;
   }
 }
 
@@ -139,7 +147,7 @@
     z-index: -1;
 
     @include above-tablet() {
-      top: -90px;
+      top: -77px;
       left: -100vw;
     }
   }
@@ -148,7 +156,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 32px;
+    row-gap: 45px;
     margin-bottom: 54px;
   }
 
@@ -156,6 +164,7 @@
     grid-column: 1/5;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 70px;
   }
 }
 
@@ -164,9 +173,10 @@
   background-color: $color-white;
 
   @include above-tablet() {
-    margin-left: -20px;
-    padding-left: 20px;
+    margin-left: -40px;
+    padding-left: 38px;
     padding-right: 41px;
+    margin-bottom: 63px;
   }
 }
 
@@ -174,7 +184,7 @@
   color: $text-title;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   padding: 0;
   text-transform: none;
 

@@ -61,10 +61,10 @@ const copyImages  = () => {
 
 const createWebp  = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(squoosh({
-    webp: {}
-  }))
-  .pipe(gulp.dest('build/img'));
+    .pipe(squoosh({
+       webp: {}
+    }))
+    .pipe(gulp.dest('build/img'));
 }
 
 //SVG
@@ -75,14 +75,14 @@ export const svg = () => {
   .pipe(gulp.dest('build/img'))
 }
 
-const sprite = () => {
-return gulp.src('source/img/icons/*.svg')
-.pipe(svgo())
-.pipe(svgstore({
-  inlineSvg: true
-}))
-.pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'))
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'))
 }
 
 //fonts
@@ -101,7 +101,7 @@ const copy = (done) => {
 //clean
 
 const clean = () => {
-    return del('build');
+  return del('build');
 }
 
 
