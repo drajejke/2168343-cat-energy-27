@@ -12,7 +12,7 @@
 
   @include above-desktop() {
     padding-top: 0;
-    padding-bottom: 85px;
+    padding-bottom: 75px;
     background-image: linear-gradient(to bottom, $color-white 136px, $color-lighten-gray 136px);
   }
 }
@@ -46,13 +46,13 @@
   margin-bottom: 20px;
 
   @include above-tablet() {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @include above-desktop() {
-    padding-right: 784px;
+    padding-right: 788px;
     margin-bottom: 69px;
   }
 }
@@ -66,13 +66,15 @@
   @include above-tablet() {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 91px;
+    margin-bottom: 104px;
+    align-items: center;
   }
 
   @include above-desktop() {
     width: 366px;
     display: grid;
     row-gap: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -88,14 +90,26 @@
   @include above-tablet() {
     display: grid;
     font-size: 20px;
-    align-items: center;
     justify-items: end;
+    row-gap: 10px;
   }
 
   @include above-desktop() {
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 36px;
+    justify-items: start;
+  }
+}
+
+.example__spending span {
+  @include above-desktop() {
+    margin-right: 10px;
+  }
+}
+
+.example__price {
+  @include above-desktop() {
+    margin-right: 0;
+    margin-left: 52px;
   }
 }
 

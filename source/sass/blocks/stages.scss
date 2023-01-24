@@ -32,7 +32,7 @@
   @include above-tablet() {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
   }
 
   @include above-desktop() {
@@ -60,7 +60,7 @@
 
 .stages__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   counter-increment: stages;
 
   &:last-child {
@@ -71,7 +71,7 @@
     content: "";
     position: absolute;
     left: -80px;
-    top: 0;
+    top: -2px;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
@@ -97,17 +97,12 @@
       line-height: 280px;
       color: $color-lighten-gray;
     }
-
-    @include above-desktop() {
-      left: auto;
-      right: 0;
-    }
   }
 
   @include above-tablet() {
     font-size: 16px;
     line-height: 24px;
-    padding: 151px 86px 57px 0;
+    padding: 151px 70px 57px 0;
     margin-bottom: 0;
   }
 
@@ -137,5 +132,13 @@
 .stages__item--watch {
   &::before {
     background-image: url("../img/watch.svg");
+  }
+
+  @include above-tablet() {
+    padding: 151px 69px 57px 0;
+  }
+
+  @include above-desktop {
+    padding: 151px 0px 57px;
   }
 }

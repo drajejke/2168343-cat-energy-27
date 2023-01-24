@@ -6,6 +6,10 @@
   &:last-child {
     padding-bottom: 0;
   }
+
+  @include above-tablet() {
+    padding-bottom: 22px;
+  }
 }
 
 .radio__label {

@@ -2,7 +2,7 @@
   position: relative;
   min-height: 290px;
   background-image:
-    linear-gradient(to bottom, $offer-background 290px, $offer-background 290px),
+    linear-gradient(to bottom, rgba($color-green, 0.85) 290px, rgba($color-green, 0.85) 290px),
     url("../img/cat-gift.jpg");
   background-size: cover, 279px 289px;
   background-repeat: no-repeat;
@@ -10,18 +10,18 @@
 
   @include retina() {
     background-image:
-      linear-gradient(to bottom, $offer-background 290px, $offer-background 290px),
+      linear-gradient(to bottom, rgba($color-green, 0.85) 290px, rgba($color-green, 0.85) 290px),
       url("../img/cat-gift@2x.jpg");
   }
 
   @include above-tablet() {
     min-height: 200px;
-    background-size: cover;
-    background-position: center, center -337px;
+    background-position: center;
+    background-size: 100%;
   }
 
   @include above-tablet() {
-    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -39,6 +39,10 @@
     left: 77px;
     top: 57px;
   }
+
+  @include above-desktop() {
+    left: 85px;
+  }
 }
 
 .gift__text {
@@ -51,9 +55,5 @@
 
   @include above-tablet() {
     text-align: start;
-  }
-
-  @include above-tablet() {
-    text-align: center;
   }
 }

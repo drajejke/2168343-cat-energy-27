@@ -11,7 +11,7 @@
   @include above-desktop() {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 28px;
   }
 }
 
@@ -44,6 +44,7 @@
 }
 
 .slider__field {
+  color: $color-slider;
   position: absolute;
   top: 108px;
   left: 120px;
@@ -51,11 +52,11 @@
   height: 40px;
   z-index: 2;
 
-  &:hover svg path {
+  &:hover svg {
     fill: $color-green;
   }
 
-  &:hover svg rect {
+  &:hover svg {
     stroke: $color-green;
   }
 
@@ -63,12 +64,12 @@
     background-color: $color-green;
   }
 
-  &:active svg path {
+  &:active svg {
     fill: $color-green-var3;
     opacity: 0.6;
   }
 
-  &:active svg rect {
+  &:active svg {
     stroke: $color-green-var3;
     opacity: 0.6;
   }

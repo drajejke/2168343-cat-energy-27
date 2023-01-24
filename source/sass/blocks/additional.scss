@@ -6,14 +6,21 @@
 
   @include green-line() {
     top: 39px;
+    left: 20px;
 
     @include above-tablet() {
-      top: 48px;
+      top: 66px;
+      left: -100vw;
+    }
+
+    @include above-desktop () {
+      top: 23px;
     }
   }
 
   @include above-tablet() {
     padding-bottom: 76px;
+    padding-top: 45px;
   }
 
   @include above-desktop() {
@@ -21,6 +28,7 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
     padding-bottom: 86px;
+    padding-top: 0;
   }
 }
 
@@ -32,14 +40,14 @@
   line-height: 24px;
   color: #000000;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   background-color: $color-white;
 
   @include above-tablet() {
     font-size: 36px;
     line-height: 36px;
     width: 411px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
     padding: 0 36px;
   }
 
@@ -65,10 +73,10 @@
 
 .additional__item {
   display: grid;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 19px;
   grid-template-columns: 1fr 1fr;
-  row-gap: 15px;
+  row-gap: 13px;
   border-top: 1px solid $color-darken-gray;
 
   &:last-child {
@@ -76,20 +84,18 @@
   }
 
   @include above-tablet() {
+    margin-bottom: 0;
+    padding: 26px 38px 28px;
+    grid-template-columns: 1fr 1fr 1fr 93px;
+    row-gap: 21px;
+    align-items: baseline;
     border-left: 1px solid $color-darken-gray;
     border-right: 1px solid $color-darken-gray;
   }
 
-  @include above-tablet() {
-    margin-bottom: 0;
-    padding: 26px 38px 28px;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 22px;
-    align-items: baseline;
-  }
-
   @include above-desktop () {
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
+    grid-template-columns: 1fr 243px 82px 244px;
     border-top: 1px solid #cdcdcd;
     border-left: none;
     border-right: none;
@@ -128,7 +134,7 @@
 
   @include above-desktop() {
     grid-column: 2/3;
-    justify-self: end;
+    justify-self: start;
   }
 }
 
@@ -145,7 +151,7 @@
 
   @include above-desktop() {
     grid-column: 3/4;
-    margin-right: 40px;
+    justify-self: start;
   }
 }
 
@@ -169,6 +175,6 @@
   }
 
   @include above-desktop() {
-    padding: 162px 24px 42px 35px;
+    padding: 187px 32px 42px 32px;
   }
 }

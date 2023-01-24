@@ -3,7 +3,11 @@
   padding-top: 27px;
 
   @include above-tablet() {
-    padding-top: 64px;
+    padding-top: 59px;
+  }
+
+  @include above-desktop() {
+    padding-top: 72px;
   }
 
   &::before {

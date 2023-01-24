@@ -18,31 +18,33 @@
   position: relative;
 
   &:first-child .stats__data {
-    padding: 16px 42px;
+    padding: 15px 42px;
+    display: block;
 
     @include above-tablet() {
-      padding: 15px 57px 20px;
+      padding: 15px 56px 20px;
     }
   }
 
   &:last-child .stats__data {
-    padding: 16px 21px;
+    padding: 15px 21px;
+    display: block;
 
     @include above-tablet() {
-      padding: 15px 30px 20px;
+      padding: 15px 29px 20px;
     }
   }
 
   &:first-child .stats__description {
     width: 77px;
     position: absolute;
-    top: 46px;
-    left: 19px;
+    top: 44px;
+    left: 22px;
     padding: 2px 5px;
 
     @include above-tablet() {
       width: 114px;
-      top: 47px;
+      top: 48px;
       left: 24px;
       padding: 16px 9px;
     }
@@ -51,14 +53,14 @@
   &:last-child .stats__description {
     width: 87px;
     position: absolute;
-    top: 46px;
+    top: 44px;
     left: 19px;
     padding: 2px 14px;
 
     @include above-tablet() {
       width: 142px;
-      top: 58px;
-      left: 10px;
+      top: 59px;
+      left: 9px;
       padding: 5px 8px;
     }
   }

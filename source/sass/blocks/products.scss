@@ -1,7 +1,7 @@
 .products {
   font-size: 12px;
   line-height: 16px;
-  padding-top: 41px;
+  padding-top: 43px;
   padding-bottom: 25px;
 
   @include above-tablet() {
@@ -11,58 +11,32 @@
 
   @include above-desktop() {
     padding-bottom: 75px;
+    padding-top: 165px;
   }
 }
 
 .products__list {
+
   @include above-tablet() {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 141px;
+    row-gap: 143px;
     column-gap: 60px;
   }
 
   @include above-desktop() {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    row-gap: 143px;
+    row-gap: 145px;
   }
 }
 
 .products__item {
   position: relative;
   display: grid;
-  padding-top: 19px;
+  padding-top: 20px;
   padding-bottom: 14px;
-  margin-bottom: 11px;
-
-  &:last-child {
-    padding-top: 25px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-
-    @include above-tablet() {
-      padding-top: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 2px solid $accent-secondary;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      background-color: $catalog-line;
-      left: -20px;
-      right: -20px;
-      bottom: -25px;
-
-      @include above-tablet() {
-        content: none;
-      }
-    }
-  }
+  margin-bottom: 10px;
 
   &::before {
     content: "";
@@ -81,6 +55,34 @@
   @include above-tablet() {
     display: block;
     margin-bottom: 0;
+  }
+}
+
+.product__item--view-all {
+  padding-top: 25px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  @include above-tablet() {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid $accent-secondary;
+  }
+
+  &::after {
+     content: "";
+     position: absolute;
+     height: 1px;
+    background-color: $catalog-line;
+    left: -20px;
+    right: -20px;
+    bottom: -25px;
+
+    @include above-tablet() {
+      content: none;
+    }
   }
 }
 
@@ -118,7 +120,7 @@
       width: 60px;
       height: 60px;
       background-size: 60px;
-      margin-top: 52px;
+      margin-top: 49px;
       margin-bottom: 49px;
     }
   }
@@ -133,7 +135,7 @@
     line-height: 18px;
     padding: 0 48px;
     text-align: center;
-    margin-bottom: 101px;
+    margin-bottom: 88px;
   }
 
   @include above-desktop() {
