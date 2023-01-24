@@ -16,6 +16,7 @@
 }
 
 .products__list {
+
   @include above-tablet() {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -36,8 +37,6 @@
   padding-top: 20px;
   padding-bottom: 14px;
   margin-bottom: 10px;
-
-
 
   &::before {
     content: "";
