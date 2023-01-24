@@ -100,21 +100,22 @@
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
             по-прежнему спит по 16 часов в день.
           </p>
-          <dl class="example__list stats">
+          <div class="example__list stats">
             <div class="stats__wrapper">
               <div class="stats__item">
-              <dt class="stats__data">5 КГ</dt>
-                <dd class="stats__description">снижение веса</dd>
-            </div>
+                <span class="stats__data">5 КГ</span>
+                <span class="stats__description">снижение веса</span>
+              </div>
               <div class="stats__item">
-              <dt class="stats__data">60 ДНЕЙ</dt>
-              <dd class="stats__description">затрачено времени</dd>
+                <span class="stats__data">60 ДНЕЙ</span>
+                <span class="stats__description">затрачено времени</span>
               </div>
             </div>
             <div class="example__spending">
-              <span>Затраты на питание:</span><span class="example_spending-price">15 000 РУБ.</span>
+              <span>Затраты на питание:</span>
+              <span class="example__price">15 000 РУБ.</span>
             </div>
-          </dl>
+          </div>
           <div class="example__slider slider">
             <picture>
               <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.png 1x, img/fat-cat-tablet@2x.png 2x">
@@ -138,12 +139,12 @@
             <h2 class="visually-hidden">Контакты</h2>
             <p class="address__text">Приглашаем<br> к сотрудничеству дилеров!</p>
             <address class="address__number">
-              <span class="address__number--streat">ул. Большая Конюшенная, д. 19/8</span>
-              <span class="address__number--town">Санкт-Петербург</span>
+              <span class="address__streat">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="address__town">Санкт-Петербург</span>
             </address>
           </div>
         </div>
-        <div class="contacts__item location">
+        <div class="location">
             <h2 class="visually-hidden">Карта расположения магазина</h2>
             <div class="location__map"></div>
         </div>
@@ -156,6 +157,7 @@
           <svg width="129" height="24">
             <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
+          <span class="visually-hidden">Логотип сайта Кэт Энерджи</span>
         </a>
         <ul class="main-footer__social social list-reset">
           <li class="social__item">

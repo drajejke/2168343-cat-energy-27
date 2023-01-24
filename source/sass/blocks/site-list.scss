@@ -35,19 +35,20 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: -8px;
+      bottom: -11px;
       left: 0;
       height: 2px;
       background-color: $color-green;
 
       @include above-desktop() {
         background-color: $color-white;
+        bottom: -11px;
       }
     }
   }
 }
 
-.site-list__link--color.site-list__item--current::after {
+.site-list__item--green.site-list__item--current::after {
   background-color: $color-green;
 }
 

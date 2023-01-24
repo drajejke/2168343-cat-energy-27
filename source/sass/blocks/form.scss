@@ -26,7 +26,7 @@
 }
 
 .form__items--catinfo {
-  margin-bottom: 47px;
+  margin-bottom: 51px;
 
   @include above-tablet() {
     margin-bottom: 72px;
@@ -38,7 +38,7 @@
 }
 
 .form__items--radio {
-  margin-bottom: 52px;
+  margin-bottom: 51px;
 
   @include above-tablet() {
     padding: 30px 0;
@@ -76,6 +76,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px 80px;
+    margin-bottom: 66px;
 
     & .form__item {
       padding-bottom: 0;
@@ -85,20 +86,22 @@
 
 
 .form__items--contact .form__items-title {
-  width: 196px;
+  width: 201px;
   padding-right: 14px;
   background-color: $color-white;
 
   @include above-tablet() {
     width: auto;
-    margin-left: -40px;
-    padding-left: 38px;
+    margin-left: -39px;
+    padding-left: 37px;
     padding-right: 42px;
   }
 }
 
 .form__items--contact .form__item label {
-  margin-right: 20px;
+  @include above-tablet() {
+    margin-right: 20px;
+  }
 }
 
 .form__items--comment {
@@ -108,11 +111,11 @@
 
   @include green-line() {
     left: 0;
-    top: -46px;
+    top: -48px;
     z-index: -1;
 
     @include above-tablet() {
-      top: -92px;
+      top: -90px;
       left: -100vw;
     }
   }
@@ -123,6 +126,7 @@
 
   @include above-desktop() {
     grid-column: 1/5;
+    margin-bottom: 69px;
   }
 }
 
@@ -138,16 +142,16 @@
 }
 
 .form__items--checkbox {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   position: relative;
 
   @include green-line() {
     left: 0;
-    top: -46px;
+    top: -49px;
     z-index: -1;
 
     @include above-tablet() {
-      top: -77px;
+      top: -76px;
       left: -100vw;
     }
   }
@@ -156,15 +160,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 45px;
-    margin-bottom: 54px;
+    row-gap: 42px;
+    margin-bottom: 59px;
   }
 
   @include above-desktop() {
     grid-column: 1/5;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 }
 
@@ -184,14 +188,14 @@
   color: $text-title;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
   padding: 0;
   text-transform: none;
 
   @include above-tablet() {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    margin-bottom: 75px;
   }
 }
 

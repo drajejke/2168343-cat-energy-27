@@ -3,7 +3,7 @@
   text-align: center;
   color: $text-secondary;
   background-image:
-    linear-gradient(to bottom, $offer-background 302px, $color-white 302px),
+    linear-gradient(to bottom, rgba($color-green, 0.85) 302px, $color-white 302px),
     url("../img/offer-background.jpg");
   background-repeat: no-repeat;
   background-size: cover, 320px 302px;
@@ -11,7 +11,7 @@
 
   @include retina {
     background-image:
-      linear-gradient(to bottom, $offer-background 302px, $color-white 302px),
+      linear-gradient(to bottom, rgba($color-green, 0.85) 302px, $color-white 302px),
       url("../img/offer-background@2x.jpg");
   }
 
@@ -34,7 +34,7 @@
   }
 
   @include above-desktop() {
-    padding-left: 113px;
+    padding-left: 110px;
   }
 }
 
@@ -49,7 +49,7 @@
   @include above-tablet() {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 54px;
+    padding-top: 60px;
     margin-bottom: 41px;
   }
 
@@ -71,7 +71,7 @@
   }
 
   @include above-desktop() {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 }
 

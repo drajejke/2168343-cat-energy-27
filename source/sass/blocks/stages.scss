@@ -36,7 +36,7 @@
   }
 
   @include above-desktop() {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 }
 
@@ -97,10 +97,6 @@
       line-height: 280px;
       color: $color-lighten-gray;
     }
-
-    @include above-desktop() {
-      right: 0;
-    }
   }
 
   @include above-tablet() {
@@ -136,5 +132,13 @@
 .stages__item--watch {
   &::before {
     background-image: url("../img/watch.svg");
+  }
+
+  @include above-tablet() {
+    padding: 151px 69px 57px 0;
+  }
+
+  @include above-desktop {
+    padding: 151px 0px 57px;
   }
 }

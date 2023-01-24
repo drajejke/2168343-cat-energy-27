@@ -34,8 +34,8 @@
             <li class="site-list__item">
               <a class="site-list__link site-list__link--color" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--color site-list__item--current" href="#">Каталог продукции</a>
+            <li class="site-list__item site-list__item--current site-list__item--green">
+              <a class="site-list__link site-list__link--color" href="#">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--color" href="form.html">Подбор программы</a>
@@ -52,31 +52,31 @@
         <ul class="products__list list-reset">
           <li class="products__item product">
             <div class="product__info">
-            <a class="product__link" href="#">
-              <picture>
+              <a class="product__link" href="#">
+                <picture>
                 <source media="(min-width: 1280px)" srcset="img/cat-e-chicken-m-desktop.png 1x, img/cat-e-chicken-m-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-e-chicken-m-tablet.png 1x, img/cat-e-chicken-m-tablet@2x.png 2x">
                 <img class="product__image" src="img/cat-e-chicken-m.png" srcset="img/cat-e-chicken-m@2x.png 2x" alt="Фотография Cat Energy PRO 500 г">
-              </picture>
-            </a>
-            <h3 class="product__title">
-              <a class="product__title--link" href="#">Cat Energy PRO 500 г</a>
-            </h3>
-            <dl class="product__composition">
-              <div class="product__item">
-                <dt class="product__name">Масса</dt>
-                <dd class="product__value">500 г</dd>
-              </div>
-              <div class="product__item">
-                <dt class="product__name">Вкус</dt>
-                <dd class="product__value">Курица</dd>
-              </div>
-              <div class="product__item">
-                <dt class="product__name">Цена</dt>
-                <dd class="product__value">700 &#8381;</dd>
-              </div>
-            </dl>
-          </div>
+                </picture>
+              </a>
+              <h3 class="product__title">
+              <a class="product__text-link" href="#">Cat Energy PRO 500 г</a>
+              </h3>
+              <dl class="product__composition">
+                <div class="product__item">
+                  <dt class="product__name">Масса</dt>
+                  <dd class="product__value">500 г</dd>
+                </div>
+                <div class="product__item">
+                  <dt class="product__name">Вкус</dt>
+                  <dd class="product__value">Курица</dd>
+                </div>
+                <div class="product__item">
+                  <dt class="product__name">Цена</dt>
+                  <dd class="product__value">700 &#8381;</dd>
+                </div>
+              </dl>
+            </div>
             <a class="product__button button"  href="#">Заказать</a>
           </li>
           <li class="products__item product">
@@ -89,7 +89,7 @@
                 </picture>
               </a>
               <h3 class="product__title">
-                <a class="product__title--link" href="#">Cat Energy PRO 1000 г</a>
+                <a class="product__text-link" href="#">Cat Energy PRO 1000 г</a>
               </h3>
               <dl class="product__composition">
                 <div class="product__item">
@@ -118,7 +118,7 @@
                 </picture>
               </a>
               <h3 class="product__title">
-                <a class="product__title--link" href="#">Cat Energy PRO 500 г</a>
+                <a class="product__text-link" href="#">Cat Energy PRO 500 г</a>
               </h3>
               <dl class="product__composition">
                 <div class="product__item">
@@ -147,7 +147,7 @@
                 </picture>
               </a>
               <h3 class="product__title">
-                <a class="product__title--link" href="#">Cat Energy PRO 1000 г</a>
+                <a class="product__text-link" href="#">Cat Energy PRO 1000 г</a>
               </h3>
               <dl class="product__composition">
                 <div class="product__item">
@@ -176,7 +176,7 @@
                 </picture>
               </a>
               <h3 class="product__title">
-                <a class="product__title--link" href="#">Cat Energy Slim 500 г</a>
+                <a class="product__text-link" href="#">Cat Energy Slim 500 г</a>
               </h3>
               <dl class="product__composition">
                 <div class="product__item">
@@ -205,7 +205,7 @@
                 </picture>
               </a>
               <h3 class="product__title">
-                <a class="product__title--link" href="#">Cat Energy Slim 1000 г</a>
+                <a class="product__text-link" href="#">Cat Energy Slim 1000 г</a>
               </h3>
               <dl class="product__composition">
                 <div class="product__item">
@@ -234,7 +234,7 @@
                 </picture>
               </a>
               <h3 class="product__title">
-                <a class="product__title--link" href="#">Cat Energy Slim 500 г</a>
+                <a class="product__text-link" href="#">Cat Energy Slim 500 г</a>
               </h3>
               <dl class="product__composition">
                 <div class="product__item">
@@ -253,7 +253,7 @@
             </div>
             <a class="product__button button"  href="#">Заказать</a>
           </li>
-          <li class="products__item">
+          <li class="products__item product__item--view-all">
             <h3 class="products__title">Показать еще 100500 товаров</h3>
             <p class="products__text">На самом деле вкусов гораздо больше!</p>
             <a class="button button--secondary" href="#">Показать все</a>
@@ -267,25 +267,25 @@
             <h3 class="additional__subject">Сахарозаменитель</h3>
             <span class="additional__amount">1 упаковка (100 г) </span>
             <span class="additional__price">200 &#8381;</span>
-            <a class="additional__link button" type="button">Заказать</a>
+            <a class="additional__link button" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__subject">Питьевая вода</h3>
             <span class="additional__amount">5 литров</span>
             <span class="additional__price">50 &#8381;</span>
-            <a class="additional__link button" type="button">Заказать</a>
+            <a class="additional__link button" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__subject">Молоко</h3>
             <span class="additional__amount">1 литр</span>
             <span class="additional__price">100 &#8381;</span>
-            <a class="additional__link button" type="button">Заказать</a>
+            <a class="additional__link button" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__subject">Витамины</h3>
             <span class="additional__amount">1 упаковка (30 г)</span>
             <span class="additional__price">300 &#8381;</span>
-            <a class="additional__link button" type="button">Заказать</a>
+            <a class="additional__link button" href="#">Заказать</a>
           </li>
         </ul>
         <div class="additional__gift gift">
@@ -295,16 +295,16 @@
       </section>
       <section class="contacts contacts--bg-gray">
         <div class="contacts__wrapper container">
-          <div class="contacts__item address">
+          <div class="contacts__item contacts__item-transform address">
             <h2 class="visually-hidden">Контакты</h2>
             <p class="address__text">Приглашаем<br> к сотрудничеству дилеров!</p>
-            <address class="address__number">
-              <span class="address__number--streat">ул. Большая Конюшенная, д. 19/8</span>
-              <span class="address__number--town">Санкт-Петербург</span>
+            <address class="address__number address__number--transform">
+              <span class="address__streat">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="address__town">Санкт-Петербург</span>
             </address>
           </div>
         </div>
-        <div class="contacts__item location">
+        <div class= "location">
           <h2 class="visually-hidden">Карта расположения магазина</h2>
           <div class="location__map"></div>
         </div>
@@ -317,6 +317,7 @@
           <svg width="129" height="24">
             <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
+          <span class="visually-hidden">Логотип сайта Кэт Энерджи</span>
         </a>
         <ul class="main-footer__social social list-reset">
           <li class="social__item">

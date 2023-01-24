@@ -1,22 +1,3 @@
-.address {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 26px;
-
-  @include above-tablet () {
-    padding: 60px 40px;
-  }
-
-  @include above-desktop() {
-    padding: 58px 110px 40px 80px;
-    position: absolute;
-    background: $color-white;
-    top: 95px;
-    z-index: 2;
-  }
-}
-
 .address__text {
   font-family: $custom-font;
   font-size: 16px;
@@ -42,27 +23,23 @@
   line-height: 20px;
   width: 139px;
 
-  &--town {
-    display: block;
-  }
-
   @include above-tablet() {
     font-size: 16px;
     width: 160px;
     text-align: end;
-
-    &--streat {
-      display: block;
-      padding-bottom: 18px;
-    }
+    display: grid;
+    gap: 10px;
   }
 
   @include above-desktop () {
     text-align: start;
-    width: 126px;
-
-    &--streat {
-      padding-bottom: 0;
-    }
   }
+}
+
+.address__number--transform {
+  @include above-desktop() {
+    gap: 0;
+    width: 120px;
+  }
+
 }

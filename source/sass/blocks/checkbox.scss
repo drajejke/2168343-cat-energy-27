@@ -16,6 +16,10 @@
   padding-left: 46px;
 
   @include above-tablet() {
+    padding-left: 57px;
+  }
+
+  @include above-desktop() {
     padding-left: 60px;
   }
 }
@@ -34,6 +38,8 @@
   @include above-tablet() {
     height: 40px;
     width: 40px;
+    top: -5px;
+    left: -3px;
   }
 }
 

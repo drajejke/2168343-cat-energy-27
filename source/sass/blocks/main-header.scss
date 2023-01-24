@@ -13,7 +13,7 @@
   }
 
   @include above-desktop() {
-    padding-top: 53px;
+    padding-top: 52px;
 
     &::before {
       content: "";
@@ -50,7 +50,13 @@
   display: flex;
   align-items: center;
   height: 65px;
+
+  @include above-tablet() {
+    display: block;
+    height: auto;
+  }
 }
+
 
 .main-header__logo img {
   @include above-tablet() {
@@ -74,6 +80,10 @@
 
 .main-header__logo picture {
   position: absolute;
+
+  @include above-tablet() {
+    position: relative;
+  }
 }
 
 .main-header__logo span {
