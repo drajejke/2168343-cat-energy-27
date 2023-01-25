@@ -1,5 +1,4 @@
 .main-header {
-
   @include above-desktop() {
     position: relative;
   }
@@ -39,7 +38,6 @@
 
 .main-header__wrapper--background-off {
   &::before {
-
     @include above-desktop() {
       content: none;
     }
@@ -60,7 +58,6 @@
 }
 
 .main-header__logo img {
-
   @include above-tablet() {
     width: 174px;
     height: 52px;

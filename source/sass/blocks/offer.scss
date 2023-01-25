@@ -2,6 +2,7 @@
   font-family: $custom-font;
   text-align: center;
   color: $text-secondary;
+  background-color: $color-green;
   background-image:
     linear-gradient(to bottom, rgba($color-green, 0.85) 302px, $color-white 302px),
     url("../img/offer-background.jpg");
@@ -77,6 +78,7 @@
 
 .offer__img {
   @include above-tablet() {
+    width: 709px;
     position: absolute;
     z-index: -1;
     left: 30px;
@@ -84,6 +86,7 @@
   }
 
   @include above-desktop() {
+    width: 552px;
     bottom: auto;
     left: calc(50% - 160px);
     top: 23px;
