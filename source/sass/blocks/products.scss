@@ -16,7 +16,6 @@
 }
 
 .products__list {
-
   @include above-tablet() {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +26,7 @@
   @include above-desktop() {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    row-gap: 145px;
+    row-gap: 144px;
   }
 }
 
@@ -72,9 +71,9 @@
   }
 
   &::after {
-     content: "";
-     position: absolute;
-     height: 1px;
+    content: "";
+    position: absolute;
+    height: 1px;
     background-color: $catalog-line;
     left: -20px;
     right: -20px;

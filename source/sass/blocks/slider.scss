@@ -15,15 +15,22 @@
   }
 }
 
-.slider__image--fat {
-  display: block;
-}
+.slider__image {
+  @include above-tablet() {
+    width: 280px;
+    height: 512px;
+  }
 
-.slider__image--thin {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: 0;
+  &--fat {
+    display: block;
+  }
+
+  &--thin {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+  }
 }
 
 .slider__field::before {
@@ -53,10 +60,7 @@
   z-index: 2;
 
   &:hover svg {
-    fill: $color-green;
-  }
-
-  &:hover svg {
+    color: $color-green;
     stroke: $color-green;
   }
 
@@ -65,11 +69,7 @@
   }
 
   &:active svg {
-    fill: $color-green-var3;
-    opacity: 0.6;
-  }
-
-  &:active svg {
+    color: $color-green-var3;
     stroke: $color-green-var3;
     opacity: 0.6;
   }

@@ -1,6 +1,7 @@
 .gift {
   position: relative;
   min-height: 290px;
+  background-color: $color-green;
   background-image:
     linear-gradient(to bottom, rgba($color-green, 0.85) 290px, rgba($color-green, 0.85) 290px),
     url("../img/cat-gift.jpg");
