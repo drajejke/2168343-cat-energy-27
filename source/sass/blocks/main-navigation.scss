@@ -85,8 +85,9 @@
   display: none;
 }
 
-.main-navigation--nojs {
+.main-navigation--nojs .main-navigation__list {
   position: static;
+  display: block;
 }
 
 .main-navigation--nojs .main-navigation__toggle {

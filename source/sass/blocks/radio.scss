@@ -14,6 +14,7 @@
 
 .radio__label {
   padding-left: 45px;
+  display: block;
 
   @include above-tablet() {
     padding-left: 87px;
@@ -58,9 +59,12 @@
 }
 
 .radio__label:hover .radio__mark,
-.radio__label:hover .radio__control,
-.radio__control[type="radio"]:focus + .radio__mark {
+.radio__label:hover .radio__control {
   border-color: $radio-border;
+}
+
+.radio__control:focus-visible + .radio__mark {
+  border-color: $color-green;
 }
 
 .radio__control:disabled + .radio__mark {

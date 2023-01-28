@@ -49,7 +49,7 @@
   text-transform: uppercase;
   border-radius: 0;
   outline: none;
-  -moz-appearance: textfield;
+  appearance: textfield;
 
   @include above-tablet () {
     font-size: 20px;
@@ -68,6 +68,11 @@
     & + .text-field__svg {
       color: $color-green;
     }
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
   }
 
   &::placeholder {
@@ -93,6 +98,10 @@
 
   & + .text-field__svg {
     color: $error;
+  }
+
+  &:hover {
+    border: 1px solid $error;
   }
 }
 

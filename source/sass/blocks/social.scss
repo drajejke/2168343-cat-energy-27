@@ -5,9 +5,9 @@
     margin-right: 0;
   }
 
-  @include above-tablet() {
-    transform: translate(10px, 4px);
-  }
+  // @include above-tablet() {
+  //   transform: translate(10px, 4px);
+  // }
 }
 
 .social__link {
