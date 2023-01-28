@@ -20,7 +20,7 @@
 
   @include above-desktop() {
     padding-bottom: 67px;
-    padding-top: 67px;
+    padding-top: 70px;
   }
 }
 
@@ -68,5 +68,6 @@
 
   @include above-tablet() {
     margin-bottom: 0;
+    padding-left: 20px;
   }
 }

@@ -14,6 +14,7 @@
 
 .checkbox__label {
   padding-left: 46px;
+  display: block;
 
   @include above-tablet() {
     padding-left: 57px;
@@ -24,9 +25,10 @@
   }
 }
 
-.checkbox__control--mark {
+.checkbox__mark {
   position: absolute;
   top: -6px;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,17 +45,21 @@
   }
 }
 
-.checkbox__control[type="checkbox"]:checked ~ .checkbox__control--mark::before {
+.checkbox__control[type="checkbox"]:checked ~ .checkbox__mark::before {
   content: url("../img/icon-check.svg");
   position: absolute;
 }
 
-.checkbox__label:hover .checkbox__control--mark,
-.checkbox__control--mark:hover {
+.checkbox__label:hover .checkbox__mark,
+.checkbox__mark:hover {
   border-color: $radio-border;
 }
 
-.checkbox__control:disabled ~ .checkbox__control--mark {
+.checkbox__control:focus-visible + .checkbox__mark {
+  border-color: $color-green;
+}
+
+.checkbox__control:disabled ~ .checkbox__mark {
   opacity: 0.3;
 }
 

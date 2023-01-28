@@ -30,21 +30,23 @@
 .site-list__item--current {
   @include above-tablet() {
     position: relative;
+  }
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -11px;
-      left: 0;
-      height: 2px;
-      background-color: $color-green;
+.site-list__item--current::after {
+  @include above-tablet() {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -11px;
+    left: 0;
+    height: 2px;
+    background-color: $color-green;
+  }
 
-      @include above-desktop() {
-        background-color: $color-white;
-        bottom: -11px;
-      }
-    }
+  @include above-desktop() {
+    background-color: $color-white;
+    bottom: -11px;
   }
 }
 

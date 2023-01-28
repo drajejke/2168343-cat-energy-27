@@ -24,7 +24,7 @@
   height: 38px;
   padding: 0;
   right: 0;
-  top: -57px;
+  top: -56px;
   border: none;
   background-color: $text-secondary;
   cursor: pointer;
@@ -45,7 +45,22 @@
   box-shadow: 0 8px 0 0 $text-title, 0 16px 0 0 $text-title;
 }
 
+.main-navigation--opened {
+  position: absolute;
+  background-color: $color-white;
+  right: 0;
+  left: 0;
+  z-index: 10;
+
+  @include above-tablet() {
+    position: relative;
+    background: none;
+  }
+}
+
 .main-navigation--opened .main-navigation__toggle {
+  right: 20px;
+
   &::before,
   &::after {
     content: "";
@@ -67,6 +82,15 @@
 }
 
 .main-navigation--closed .main-navigation__list {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__list {
+  position: static;
+  display: block;
+}
+
+.main-navigation--nojs .main-navigation__toggle {
   display: none;
 }
 

@@ -163,6 +163,7 @@ export const start = gulp.series(
   scripts,
   svg,
   sprite,
+  createWebp,
   ),
   gulp.series(
   server,
