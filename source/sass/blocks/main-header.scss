@@ -14,24 +14,26 @@
 
   @include above-desktop() {
     padding-top: 52px;
+  }
+}
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 50%;
-      height: 694px;
-      top: 0;
-      left: 50%;
-      background-image: url("../img/offer-cat-desktop.jpg");
-      background-repeat: no-repeat;
-      background-position: right;
-      z-index: -1;
-      background-color: $offer-background;
+.main-header__wrapper::before {
+  @include above-desktop() {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    left: 50%;
+    background-image: url("../img/offer-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -1;
+    background-color: $offer-background;
 
-      @include retina {
-        background-image: url("../img/offer-cat-desktop@2x.jpg");
-        background-size: 112% 694px;
-      }
+    @include retina {
+      background-image: url("../img/offer-cat-desktop@2x.jpg");
+      background-size: 720px 694px;
     }
   }
 }
