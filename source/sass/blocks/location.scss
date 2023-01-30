@@ -1,11 +1,37 @@
-.location iframe {
+.location {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.location__map {
   display: block;
   border: none;
   position: relative;
   height: 362px;
   width: 100vw;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina() {
+    background-image: url("../img/map@2x.jpg");
+  }
 
   @include above-tablet() {
-    height: 400px;
+    min-height: 400px;
+    background-image: url("../img/map-tablet.jpg");
+
+    @include retina() {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @include above-desktop() {
+    background-image: url("../img/map-desktop.jpg");
+    height: 100%;
+
+    @include retina() {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

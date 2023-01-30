@@ -1,5 +1,19 @@
 .contacts {
-  position: relative;
+  @include above-desktop() {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 95px 1fr 1fr 1fr;
+  }
+}
+
+.contacts__wrapper {
+  @include above-desktop () {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    z-index: 1;
+    padding: 0;
+    margin-left: 111px;
+  }
 }
 
 .contacts__item {
@@ -14,7 +28,6 @@
 
   @include above-desktop() {
     padding: 58px 73px 59px 80px;
-    position: absolute;
     background: $color-white;
     top: 95px;
     z-index: 2;
@@ -24,10 +37,10 @@
 .contacts__item-transform {
   @include above-desktop {
     padding-right: 114px;
-    padding-bottom: 40px;
+    padding-bottom: 36px;
+    padding-top: 57px;
   }
 }
-
 
 .contacts--bg-gray {
   background-color: $accent-secondary;
