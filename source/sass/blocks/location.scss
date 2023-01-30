@@ -1,14 +1,9 @@
-.location {
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-}
-
 .location__map {
   display: block;
   border: none;
   position: relative;
-  height: 362px;
-  width: 100vw;
+  min-height: 362px;
+  width: 100%;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
